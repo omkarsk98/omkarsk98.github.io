@@ -8,6 +8,11 @@ import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
 
 function Header(props) {
+  // get url params
+  const url = window.location.href;
+  const urlParam = url.split("/");
+  console.log("urlParam", urlParam);
+  const role = urlParam.includes("ds") ? "ds" : "sde";
   const theme = props.theme;
 
   const styles = style({
@@ -81,7 +86,7 @@ function Header(props) {
             <li>
               <NavLink
                 className="homei"
-                to="/home"
+                to={`/${role}/`}
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
@@ -92,7 +97,7 @@ function Header(props) {
             <li>
               <NavLink
                 className="ec"
-                to="/education"
+                to={`/${role}/education`}
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
@@ -103,7 +108,7 @@ function Header(props) {
             <li>
               <NavLink
                 className="xp"
-                to="/experience"
+                to={`/${role}/experience`}
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
@@ -114,7 +119,7 @@ function Header(props) {
             <li>
               <NavLink
                 className="projects"
-                to="/projects"
+                to={`/${role}/projects`}
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
@@ -125,7 +130,7 @@ function Header(props) {
             <li>
               <NavLink
                 className="cr"
-                to="/contact"
+                to={`/${role}/contact`}
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}

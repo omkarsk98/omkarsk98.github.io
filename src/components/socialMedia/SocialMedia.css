@@ -37,15 +37,25 @@
   box-shadow: 0 5px 15px #0e76a8;
 }
 
+.site i {
+  background-color: #0e76a8;
+  transition: all 0.2s ease-in-out;
+}
+
+.site i:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #0e76a8;
+}
+
 .github i {
   background-color: #333;
   transition: all 0.2s ease-in-out;
 }
 
-.github i:hover {
+/* .github i:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 15px #333;
-}
+} */
 
 .gitlab i {
   background-color: #ffcc52;
@@ -63,6 +73,26 @@
 }
 
 .google i:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #ea4335;
+}
+
+.stackoverflow i {
+  background-color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.stackoverflow i:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #ea4335;
+}
+
+.leetcode i {
+  background-color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.leetcode i:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 15px #ea4335;
 }

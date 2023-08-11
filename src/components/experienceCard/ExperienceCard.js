@@ -4,6 +4,8 @@ import "./ExperienceCard.css";
 function ExperienceCard(props) {
   const experience = props.experience;
   const theme = props.theme;
+  const expDesc = experience.description.map((row) => <li>{row}</li>);
+
   return (
     <div
       className="experience-card"
@@ -57,7 +59,7 @@ function ExperienceCard(props) {
           className="experience-card-description"
           style={{ color: theme.text }}
         >
-          {experience["description"]}
+          <ul>{expDesc}</ul>
         </p>
       </div>
     </div>

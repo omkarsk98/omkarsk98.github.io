@@ -2,8 +2,8 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to true if you want to use the splash screen.
-  useCustomCursor: true, // Change this to false if you want the good'ol cursor
+  isSplash: false, // Change this to true if you want to use the splash screen.
+  useCustomCursor: false, // Change this to false if you want the good'ol cursor
   googleTrackingID: "G-Y2RTMYM87T",
 };
 
@@ -20,14 +20,30 @@ const greeting = {
   mail: "mailto:omkarsk98@gmail.com",
 };
 
-const socialMediaLinks = {
-  /* Your Social Media Link */
-  github: "https://github.com/omkarsk98",
-  linkedin: "https://www.linkedin.com/in/omkarsk98",
-  gmail: "omkarsk98@gmail.com",
-  leetcode: "https://leetcode.com/omkarsk98/",
-  stackoverflow: "https://stackoverflow.com/users/8802812/omkar-kulkarni",
-};
+// converting this to an array so this can be used dynamically
+const socialMediaLinks = [
+  { name: "Github", url: "https://github.com/omkarsk98", icon: "mdi:github" },
+  {
+    name: "Linkedin",
+    url: "https://linkedin.com/in/omkarsk98",
+    icon: "devicon:linkedin",
+  },
+  {
+    name: "GMail",
+    url: "mailto:omkarsk98@gmail.com",
+    icon: "ic:outline-email",
+  },
+  {
+    name: "Stackoverflow",
+    url: "https://stackoverflow.com/users/8802812/omkar-kulkarni",
+    icon: "logos:stackoverflow-icon",
+  },
+  {
+    name: "Leetcode",
+    url: "https://leetcode.com/omkarsk98",
+    icon: "simple-icons:leetcode",
+  },
+];
 
 const skills = {
   data: [
@@ -193,47 +209,62 @@ const skills = {
       ],
     },
     {
-      title: "Cloud Infra-Architecture",
+      title: "Data Science",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Experience hosting and managing websites",
-        "⚡ Experience with Continuous Integration",
+        "⚡ Natural Language Processing",
+        "⚡ Data visualization",
+        "⚡ Regression",
+        "⚡ Recommendation Systems",
       ],
       softwareSkills: [
         {
-          skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
+          skillName: "Python",
+          fontAwesomeClassname: "simple-icons:python",
           style: {
-            color: "#FF9900",
+            color: "#3776AB",
           },
         },
         {
-          skillName: "Netlify",
-          fontAwesomeClassname: "simple-icons:netlify",
+          skillName: "Spark",
+          fontAwesomeClassname: "devicon-plain:apachespark-wordmark",
           style: {
-            color: "#38AFBB",
+            color: "#3776AB",
           },
         },
         {
-          skillName: "Heroku",
-          fontAwesomeClassname: "simple-icons:heroku",
+          skillName: "Tensorflow",
+          fontAwesomeClassname: "logos:tensorflow",
           style: {
-            color: "#6863A6",
+            color: "#3776AB",
           },
         },
         {
-          skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
+          skillName: "Hugging Face",
+          fontAwesomeClassname: "fluent-emoji:hugging-face",
           style: {
-            color: "#FFCA28",
+            color: "#3776AB",
           },
         },
         {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
+          skillName: "Numpy",
+          fontAwesomeClassname: "devicon:numpy-wordmark",
           style: {
-            color: "#336791",
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "Pandas",
+          fontAwesomeClassname: "logos:pandas",
+          style: {
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "Tableau",
+          fontAwesomeClassname: "logos:tableau-icon",
+          style: {
+            color: "#3776AB",
           },
         },
         {
@@ -244,17 +275,10 @@ const skills = {
           },
         },
         {
-          skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
           style: {
-            color: "#1488C6",
-          },
-        },
-        {
-          skillName: "GitHub Actions",
-          fontAwesomeClassname: "simple-icons:githubactions",
-          style: {
-            color: "#5b77ef",
+            color: "#4479A1",
           },
         },
       ],
@@ -265,32 +289,30 @@ const skills = {
 const degrees = {
   degrees: [
     {
-      title: "Shantilal Shah Engineering College",
-      subtitle: "Bachelor in Information Technology",
-      logo_path: "ssec.png",
-      alt_name: "SSEC",
-      duration: "2021 - Present",
+      title: "University of Southern California",
+      subtitle: "Master of Science - Computer Science",
+      logo_path: "usclogo.png",
+      alt_name: "USC",
+      duration: "January 2022 - December 2023",
       descriptions: [
-        "⚡ I'm currently pursuing my bachelors in Information Technology.",
-        // "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        // "⚡ I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
-        // "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course. ",
+        "⚡ I'm currently pursuing my masters in Computer Science and specialising in Data Science.",
+        "⚡ As part of my specialisation, I have studied, Database Systems, Data Mining, Natural Language Processing, Information Retrieval etc.",
+        "⚡ I have secured 3.67/4 CGPA.",
       ],
-      website_link: "http://www.ssgec.ac.in/",
+      website_link: "https://www.usc.edu/",
     },
     {
-      title: "Dr. S. & S. S. Ghandhy College Of Engineering & Technology",
-      subtitle: "Diploma in Information Technology",
-      logo_path: "ssgandhy.png",
-      alt_name: "SSGC",
-      duration: "2018 - 2021",
+      title: "Manipal University Jaipur",
+      subtitle: "Bachelor of Technology - Computer Science",
+      logo_path: "muj-logo.png",
+      alt_name: "MUJ",
+      duration: "August 2016 - July 2020",
       descriptions: [
         "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        "⚡ I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
         "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course. ",
-        "⚡ I have secured 9.82 CGPA.",
+        "⚡ I have secured 9.04/10 CGPA.",
       ],
-      website_link: "http://www.ssgc.cteguj.in/",
+      website_link: "https://jaipur.manipal.edu/",
     },
   ],
 };
@@ -378,153 +400,140 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work Experience and Internships",
   description:
-    "I've completed one internship. I've mostly done projects on my own and I am actively looking for internships. I love organizing workshops to share my knowledge with others.",
+    "Currently, as of August 2023, I am interning at Rockwell Automation. I take greate pride to mention that I have worked with Asort E-Commerce as a Software Developer in the past. I had interned in the same company and thats how they offered me a full time job.",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work Experience",
       experiences: [
-        {
-          title: "Node.js Backend Developer",
-          company: "Valora Infotech",
-          company_url: "http://valorainfotech.com/",
-          logo_path: "valora.jpg",
-          duration: "Oct 2020 - Dec 2022",
-          location: "Surat, Gujarat",
-          description: `Train, oversee, and mentor young software development employees. I created and managed the admin panel backend and a gambling application as a Node.js backend developer. I obtained knowledge in Web Socket, Payment Gateway Integration, and gaming legislation, while growing my industry experience and investigating new technologies.
-          Focus on change request functions in close collaboration with the project manager and team leads.
-          Developed new and maintained existing applications.
-          Increased productivity and problem-solving technics by 20%.
-          We primarily used PERN and MERN Stack. 80% of my work was doing backend development and the remaining 20% was DevOps-related tasks.
-          `,
-          // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
-          color: "#0071C5",
-        },
         // {
-        //   title: "Node.js Backend Developer (Intern)",
-        //   company: "Valora Infotech",
-        //   company_url: "http://valorainfotech.com/",
-        //   logo_path: "valora.jpg",
-        //   duration: "Oct 2020 - Mar 2021",
-        //   location: "Surat, Gujarat",
-        //   description: `Focus on change request functions in close collaboration with the project manager and team leads.
-        //   Developed new and maintained existing applications.
-        //   Increased productivity and problem-solving technics by 20%.
-        //   We primarily used PERN and MERN Stack. 80% of my work was doing backend development and the remaining 20% was DevOps-related tasks.
-        //   `,
-        //   // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
+        //   title: "Data Science Intern",
+        //   company: "Rockwell Automation",
+        //   company_url: "https://www.rockwellautomation.com/en-us.html",
+        //   logo_path: "ra-logo.png",
+        //   duration: "June 2023 - August 2023",
+        //   location: "Gurugram, India",
+        //   description: [],
         //   color: "#0071C5",
         // },
         {
-          title: "Full Stack Developer (Freelancer)",
-          company: "NightOwls",
-          company_url: "http://nightowls.company/",
-          logo_path: "nightowls.jpg",
-          duration: "Sep 2020 - Oct 2020",
-          location: "Work From Home",
-          description: `Maintain close contact with the client and team when handling change requests.
-          LAMP Stack was mostly utilised. 40% of my work was doing backend development, 30% of my work was designing database schemas, and 30% of my work was on maintain hosting and user traffics on the website.
-          `,
-          // "Created Front end of Yearn Financial Mutual Funds website. also degined simple web application for better user experience, designed DB Schemas as well.",
-          color: "#ee3c26",
+          title: "Software Developer",
+          company: "Asort E-Commerce",
+          company_url: "https://asort.com/",
+          logo_path: "asort-logo.jpeg",
+          duration: "January 2020 - November 2021",
+          location: "Gurugram, India",
+          description: [
+            "Engineered over 10 microservices in distributed environments in nodejs and ReactJS using agile project management to ship high quality code to production hosted on AWS.",
+            "Built over 50 ReSTful APIs in node.js and ReactJS for catalog search, product checkout, distributor management and admin dashboard serving close to 5000 customers per day.",
+            "Optimized over 20 crucial mysql and mongodb queries by indexing, denormalizing and caching to cut down database instances by 50%.",
+            "Improvised bug tracking and fixing by improving logs management in AWS Cloudwatch and postman to decrease CRM turn-around-time by 80%.",
+            "Architected and prototyped admin, vendors, and distributor dashboards in JavaScript (ES6+) and ReactJS to improve decision making with better insights and analytics.",
+          ],
+          // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
+          color: "#0071C5",
+        },
+        {
+          title: "Software Developer Intern",
+          company: "Asort E-Commerce",
+          company_url: "https://asort.com/",
+          logo_path: "asort-logo.jpeg",
+          duration: "July 2019 - December 2019",
+          location: "Gurugram, India",
+          description: [
+            "Built cross-platform mobile application in React Native to enhance user experience for 20k active users.",
+            "Integrated ReSTful APIs on admin dashboard to dynamically update mobile application, reducing engineer intervention by 95%.",
+            "Automated dynamic sanity tests with Selenium and Appium to lower Quality Assurance effort and time by 80%.",
+          ],
+          // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
+          color: "#0071C5",
         },
       ],
     },
-    {
-      title: "Volunteerships",
-      experiences: [
-        {
-          title: "Community Lead",
-          company: "Bauddhik-Geeks",
-          company_url: "https://bauddhikgeeks.tech/",
-          logo_path: "bauddhikgeeks.png",
-          duration: "Sep 2021 - Present",
-          location: "Work From Home",
-          description:
-            "Help Tech-Geeks so they get exposure to the technical world and enlighten their skills. Hence, the programming club highlight all the skills of the individual members and help them develop and groom their skills in a meaningful way. Help community members to learn and grow.",
-          color: "#FBBD18",
-        },
-        {
-          title: "Cross Winter of Code Mentor",
-          company: "CWOC",
-          company_url: "https://crosswoc.ieeedtu.in/",
-          logo_path: "cwoc.png",
-          duration: "Feb 2021 - Present",
-          location: "Work From Home",
-          description:
-            "Mentorship responsibilities were to help students plan the project, review issues and pull requests, ensure smooth progress and help them out when they are stuck.",
-          color: "#4285F4",
-        },
-        // {
-        //   title: "Campus Hustler",
-        //   company: "Skillenza",
-        //   company_url: "https://skillenza.com/",
-        //   logo_path: "skillenza.png",
-        //   duration: "Feb 2021 - Present",
-        //   location: "Work from Home",
-        //   description:
-        //     "Spread Awareness of new Technologies and new Opportunities to Students and Grow Skillenza Community.",
-        //   color: "#196acf",
-        // },
-        {
-          title: "GDG Student Volunteer",
-          company: "Google Developer Groups",
-          company_url: "https://gdg.community.dev/",
-          logo_path: "gdg.png",
-          duration: "Feb 2021 - Present",
-          location: "Work From Home",
-          description:
-            "Google Developer Group Surat Student Volunteer and Member.",
-          color: "#D83B01",
-        },
-        {
-          title: "Postman Student Expert",
-          company: "Postman",
-          company_url: "https://www.postman.com/",
-          logo_path: "postman.png",
-          duration: "Feb 2020 - Present",
-          location: "Work From Home",
-          description:
-            "Google Developer Group Surat Student Volunteer and Member.",
-          color: "#D83B01",
-        },
-        {
-          title: "GitHub Student Developer",
-          company: "GitHub",
-          company_url: "https://github.com/",
-          logo_path: "github.png",
-          duration: "Nov 2019 - Present",
-          location: "Work from Home",
-          description:
-            "Contribute to Open Source Community and Open Source Project.",
-          color: "#040f26",
-        },
-        {
-          title: "Google Local Guide",
-          company: "Google Map",
-          company_url: "https://maps.google.com/localguides/",
-          logo_path: "localguide.png",
-          duration: "Sep 2018 - Present",
-          location: "Work From Home",
-          description:
-            "Day-to-day responsibilities of helping local businesses to spread their business to the world. Helping users by writing reviews about different locations and spaces such as shops, malls, etc.",
-          color: "#D83B01",
-        },
-        {
-          title: "E. F. I. Student Volunteer",
-          company: "ENVIRONMENTALIST FOUNDATION OF INDIA",
-          company_url: "https://indiaenvironment.org/",
-          logo_path: "efi.png",
-          duration: "Apr 2017 - Present",
-          location: "Work From Home",
-          description:
-            "Take time out over weekends to join a gang of nation builders, nature enthusiasts to conserve what is left.",
-          color: "#5a900f",
-        },
-      ],
-    },
+    // {
+    //   title: "Volunteerships",
+    //   experiences: [
+    //     {
+    //       title: "Community Lead",
+    //       company: "Bauddhik-Geeks",
+    //       company_url: "https://bauddhikgeeks.tech/",
+    //       logo_path: "bauddhikgeeks.png",
+    //       duration: "Sep 2021 - Present",
+    //       location: "Work From Home",
+    //       description:
+    //         ["Help Tech-Geeks so they get exposure to the technical world and enlighten their skills. Hence, the programming club highlight all the skills of the individual members and help them develop and groom their skills in a meaningful way. Help community members to learn and grow."],
+    //       color: "#FBBD18",
+    //     },
+    //     {
+    //       title: "Cross Winter of Code Mentor",
+    //       company: "CWOC",
+    //       company_url: "https://crosswoc.ieeedtu.in/",
+    //       logo_path: "cwoc.png",
+    //       duration: "Feb 2021 - Present",
+    //       location: "Work From Home",
+    //       description:
+    //         ["Mentorship responsibilities were to help students plan the project, review issues and pull requests, ensure smooth progress and help them out when they are stuck."],
+    //       color: "#4285F4",
+    //     },
+    //     {
+    //       title: "GDG Student Volunteer",
+    //       company: "Google Developer Groups",
+    //       company_url: "https://gdg.community.dev/",
+    //       logo_path: "gdg.png",
+    //       duration: "Feb 2021 - Present",
+    //       location: "Work From Home",
+    //       description:
+    //         ["Google Developer Group Surat Student Volunteer and Member."],
+    //       color: "#D83B01",
+    //     },
+    //     {
+    //       title: "Postman Student Expert",
+    //       company: "Postman",
+    //       company_url: "https://www.postman.com/",
+    //       logo_path: "postman.png",
+    //       duration: "Feb 2020 - Present",
+    //       location: "Work From Home",
+    //       description:
+    //        ["Google Developer Group Surat Student Volunteer and Member."],
+    //       color: "#D83B01",
+    //     },
+    //     {
+    //       title: "GitHub Student Developer",
+    //       company: "GitHub",
+    //       company_url: "https://github.com/",
+    //       logo_path: "github.png",
+    //       duration: "Nov 2019 - Present",
+    //       location: "Work from Home",
+    //       description:
+    //         ["Contribute to Open Source Community and Open Source Project."],
+    //       color: "#040f26",
+    //     },
+    //     {
+    //       title: "Google Local Guide",
+    //       company: "Google Map",
+    //       company_url: "https://maps.google.com/localguides/",
+    //       logo_path: "localguide.png",
+    //       duration: "Sep 2018 - Present",
+    //       location: "Work From Home",
+    //       description:
+    //         ["Day-to-day responsibilities of helping local businesses to spread their business to the world. Helping users by writing reviews about different locations and spaces such as shops, malls, etc."],
+    //       color: "#D83B01",
+    //     },
+    //     {
+    //       title: "E. F. I. Student Volunteer",
+    //       company: "ENVIRONMENTALIST FOUNDATION OF INDIA",
+    //       company_url: "https://indiaenvironment.org/",
+    //       logo_path: "efi.png",
+    //       duration: "Apr 2017 - Present",
+    //       location: "Work From Home",
+    //       description:
+    //         ["Take time out over weekends to join a gang of nation builders, nature enthusiasts to conserve what is left."],
+    //       color: "#5a900f",
+    //     },
+    //   ],
+    // },
   ],
 };
 
@@ -540,7 +549,7 @@ const projectsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "harikrushn.jpg",
+    profile_image_path: "omkar.jpg",
     description:
       "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
   },

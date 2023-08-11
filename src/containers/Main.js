@@ -1,5 +1,12 @@
 import React from "react";
-import { Route, Switch, HashRouter } from "react-router-dom";
+import {
+  Route,
+  Switch,
+  HashRouter,
+  Redirect,
+  Router,
+  BrowserRouter,
+} from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
@@ -93,10 +100,19 @@ export default function Main(propss) {
   } else {
     return (
       <div>
-        <HashRouter basename="/">
+        <BrowserRouter basename="/">
           <Switch>
+            <Route path="/" exact render={(props) => <Redirect to="/sde" />} />
+            {/* <Route
+              path="/:role"
+              exact
+              render={(props) => {
+                const { role = "sde" } = props.match.params;
+                return <Redirect to={`/${role}/home`} />
+              }}
+            /> */}
             <Route
-              path="/"
+              path="/:role/"
               exact
               render={(props) => (
                 <Home
@@ -107,17 +123,7 @@ export default function Main(propss) {
               )}
             />
             <Route
-              path="/home"
-              render={(props) => (
-                <Home
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/experience"
+              path="/:role/experience"
               exact
               render={(props) => (
                 <Experience
@@ -128,7 +134,7 @@ export default function Main(propss) {
               )}
             />
             <Route
-              path="/education"
+              path="/:role/education"
               render={(props) => (
                 <Education
                   {...props}
@@ -149,6 +155,10 @@ export default function Main(propss) {
             />
             <Route
               path="/projects"
+              render={(props) => <Redirect to="/sde/projects" />}
+            />
+            <Route
+              path="/:role/projects"
               render={(props) => (
                 <Projects
                   {...props}
@@ -158,7 +168,7 @@ export default function Main(propss) {
               )}
             />
           </Switch>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     );
   }

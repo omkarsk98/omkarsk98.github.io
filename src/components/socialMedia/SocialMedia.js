@@ -3,64 +3,16 @@ import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
 
 export default function socialMedia() {
-  return (
-    <div className="social-media-div">
-      <a
-        href={socialMediaLinks.github}
-        className="icon-button github"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fab fa-github"></i>
-        <span></span>
+  return socialMediaLinks.map((site) => {
+    return (
+      <a href={site.url} target="_blank" style={{ color: "inherit" }}>
+        <span
+          key={site.name}
+          className={`iconify icon-button ${site.className} ${site.faClassName}`}
+          data-icon={site.icon}
+          style={{ width: "2em", height: "2em", marginInline: "10px" }}
+        ></span>
       </a>
-      {socialMediaLinks.gitlab && (
-        <a
-          href={socialMediaLinks.gitlab}
-          className="icon-button gitlab"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-gitlab"></i>
-          <span></span>
-        </a>
-      )}
-      <a
-        href={socialMediaLinks.linkedin}
-        className="icon-button linkedin"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fab fa-linkedin-in"></i>
-        <span></span>
-      </a>
-      <a
-        href={`mailto:${socialMediaLinks.gmail}`}
-        className="icon-button google"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fab fa-google"></i>
-        <span></span>
-      </a>
-      <a
-        href={socialMediaLinks.twitter}
-        className="icon-button twitter"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fab fa-twitter"></i>
-        <span></span>
-      </a>
-      <a
-        href={socialMediaLinks.instagram}
-        className="icon-button instagram"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fab fa-instagram"></i>
-        <span></span>
-      </a>
-    </div>
-  );
+    );
+  });
 }
