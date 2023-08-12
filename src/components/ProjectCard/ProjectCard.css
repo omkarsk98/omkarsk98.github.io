@@ -56,11 +56,11 @@
 }
 
 .repo-description {
-  word-wrap: break-word;
+  /* word-wrap: break-word; */
   text-align: left;
-  display: -webkit-box;
+  /* display: -webkit-box; */
   font-family: "Google Sans Regular";
-  -webkit-line-clamp: 4;
+  /* -webkit-line-clamp: 4; */
   -webkit-box-orient: vertical;
 }
 
@@ -74,6 +74,7 @@
   margin: 0;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .Leftitem {
   align-content: flex-start;

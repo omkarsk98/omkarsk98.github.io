@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import { Redirect, Link } from "react-router-dom";
 import { Fade } from "react-reveal";
 import { projectsHeader, projects } from "../../portfolio.js";
 import "./Projects.css";
@@ -12,11 +13,13 @@ function Projects(props) {
   const theme = props.theme;
 
   const styles = style({
-    backgroundColor: `${theme.accentBright}`,
+    backgroundColor: `${theme.accentColor}`,
     ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
+      boxShadow: `0 5px 15px ${theme.accentColor}`,
     },
   });
+  // get :role from url params
+  const { role } = props.match.params;
 
   return (
     <div className="projects-main">
@@ -44,21 +47,30 @@ function Projects(props) {
           </div>
         </Fade>
       </div>
-      <div className="repo-cards-div-main">
-        {projects.data.map((repo) => {
+
+      <div
+        className={`repo-cards-div-main ${
+          role === "ds" ? "two-col-grid" : null
+        }`}
+      >
+        {projects[role].data.map((repo) => {
           return <ProjectCard repo={repo} theme={theme} />;
         })}
       </div>
       <br />
       <br />
       <br />
-      <a
-        {...styles}
+      <Link
+        to={role === "sde" ? "/ds/projects" : "/sde/projects"}
+        className="other-projects"
+      >{`${role === "ds" ? "Software" : "Data Science"} Projects`}</Link>
+      {/* <span
+        // {...styles}
         className="general-btn"
-        href="https://github.com/harikanani"
+        onClick={() => {<Redirect to={`/${role === "ds" ? "sde" : "ds"}/projects`} />}}
       >
-        More Projects (Github)
-      </a>
+        {`${role === "ds" ? "Software" : "Data Science"} Projects`}
+      </span> */}
       <br />
       <br />
       <Footer theme={props.theme} onToggle={props.onToggle} />

@@ -14,7 +14,7 @@ export default function ProjectCard({ repo, theme }) {
 
   const styles = style({
     color: "rgb(88, 96, 105)",
-    backgroundColor: "rgb(255, 255, 255)",
+    // backgroundColor: "rgb(255, 255, 255)",
     boxShadow: "rgba(0, 0, 0, 0.2) 0px 10px 30px -15px",
     padding: "2rem",
     cursor: "pointer",
@@ -25,6 +25,16 @@ export default function ProjectCard({ repo, theme }) {
       boxShadow: `${theme.imageDark} 0 2px 15px`,
     },
   });
+
+  const getDescriptionList = () => {
+    return (
+      <ul>
+        {repo.description.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    );
+  };
 
   return (
     <div>
@@ -41,7 +51,9 @@ export default function ProjectCard({ repo, theme }) {
             </p>
           </div>
           <p className="repo-description" style={{ color: theme.text }}>
-            {repo.description}
+            {typeof repo.description === "string"
+              ? repo.description
+              : getDescriptionList()}
           </p>
           <div className="flexDiv">
             <div className="repo-details Leftitem">

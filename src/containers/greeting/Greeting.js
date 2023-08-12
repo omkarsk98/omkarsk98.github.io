@@ -12,9 +12,10 @@ export default function Greeting(props) {
   const history = useHistory();
 
   const styles = style({
-    backgroundColor: `${theme.accentBright}`,
+    backgroundColor: `${theme.accentColor}`,
+    color: `${theme.body}`,
     ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
+      boxShadow: `0 5px 15px ${theme.accentColor}`,
     },
   });
 
@@ -36,7 +37,7 @@ export default function Greeting(props) {
                 {greeting.subTitle}
               </p>
               <SocialMedia />
-              <div className="portfolio-repo-btn-div">
+              {/* <div className="portfolio-repo-btn-div">
                 <button
                   {...styles}
                   className="button"
@@ -46,7 +47,7 @@ export default function Greeting(props) {
                 >
                   Contact Me
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="greeting-image-div">

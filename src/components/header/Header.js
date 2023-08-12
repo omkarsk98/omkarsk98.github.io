@@ -11,9 +11,11 @@ function Header(props) {
   // get url params
   const url = window.location.href;
   const urlParam = url.split("/");
-  console.log("urlParam", urlParam);
   const role = urlParam.includes("ds") ? "ds" : "sde";
   const theme = props.theme;
+
+  // const activeStyle = { fontWeight: "bold", backgroundColor: theme.accentColor, color: "#fff" };
+  const activeStyle = {};
 
   const styles = style({
     cursor: "pointer",
@@ -88,7 +90,7 @@ function Header(props) {
                 className="homei"
                 to={`/${role}/`}
                 tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
+                activeStyle={activeStyle}
                 style={{ borderRadius: 5, color: theme.text }}
               >
                 Home
@@ -99,7 +101,7 @@ function Header(props) {
                 className="ec"
                 to={`/${role}/education`}
                 tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
+                activeStyle={activeStyle}
                 style={{ borderRadius: 5, color: theme.text }}
               >
                 Education and Certifications
@@ -110,7 +112,7 @@ function Header(props) {
                 className="xp"
                 to={`/${role}/experience`}
                 tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
+                activeStyle={activeStyle}
                 style={{ borderRadius: 5, color: theme.text }}
               >
                 Experience
@@ -121,13 +123,13 @@ function Header(props) {
                 className="projects"
                 to={`/${role}/projects`}
                 tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
+                activeStyle={activeStyle}
                 style={{ borderRadius: 5, color: theme.text }}
               >
                 Projects
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 className="cr"
                 to={`/${role}/contact`}
@@ -137,10 +139,10 @@ function Header(props) {
               >
                 Contact and Resume
               </NavLink>
-            </li>
-            <button {...styles} onClick={changeTheme}>
+            </li> */}
+            {/* <button {...styles} onClick={changeTheme}>
               {icon}
-            </button>
+            </button> */}
           </ul>
         </header>
       </div>

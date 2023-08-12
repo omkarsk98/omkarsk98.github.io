@@ -100,7 +100,7 @@ export default function Main(propss) {
   } else {
     return (
       <div>
-        <BrowserRouter basename="/">
+        <BrowserRouter>
           <Switch>
             <Route path="/" exact render={(props) => <Redirect to="/sde" />} />
             {/* <Route
