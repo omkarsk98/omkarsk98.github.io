@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "personalPortfolio",
+  "name": "personal-portfolio",
   "version": "1.0.0",
-  "homepage": "http://omkarsk98.github.io/",
+  "homepage": "https://omkarsk98.github.io",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",

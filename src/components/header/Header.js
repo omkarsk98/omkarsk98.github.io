@@ -38,7 +38,7 @@ function Header(props) {
     },
   });
 
-  const link = settings.isSplash ? "/splash" : "home";
+  const link = role === "ds" ? "/ds" : "/sde";
 
   const [currTheme, setCurrTheme] = useState(props.theme);
 

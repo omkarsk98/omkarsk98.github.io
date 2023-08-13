@@ -76,9 +76,11 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .Leftitem {
   align-content: flex-start;
 }
+
 .Rightitem {
   align-items: flex-end;
 }
@@ -91,9 +93,20 @@
   margin-right: auto;
 }
 
+.project-card-div {
+  color: rgb(88, 96, 105);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
 @media (max-width: 768px) {
   .repo-name {
     font-size: 16px;
+    white-space: normal;
   }
 
   .repo-description {
@@ -106,5 +119,9 @@
 
   .repo-creation-date {
     font-size: 14px;
+  }
+
+  .project-card-div {
+    padding: 1rem;
   }
 }

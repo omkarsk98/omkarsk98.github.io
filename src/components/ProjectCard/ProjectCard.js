@@ -21,9 +21,6 @@ export default function ProjectCard({ repo, theme }) {
     borderRadius: "5px",
     height: "100%",
     transition: "all 0.2s ease-in-out",
-    ":hover": {
-      boxShadow: `${theme.imageDark} 0 2px 15px`,
-    },
   });
 
   const getDescriptionList = () => {
@@ -40,10 +37,12 @@ export default function ProjectCard({ repo, theme }) {
     <div>
       <Fade bottom duration={2000} distance="40px">
         <div
-          {...styles}
+          className="project-card-div"
           key={repo.id}
-          // onClick={() => openRepoinNewTab(repo.url)}
-          style={{ backgroundColor: theme.projectCard }}
+          style={{
+            backgroundColor: theme.projectCard,
+            ":hover": { boxShadow: `${theme.imageDark} 0 2px 15px` },
+          }}
         >
           <div className="repo-name-div">
             <p className="repo-name" style={{ color: theme.text }}>

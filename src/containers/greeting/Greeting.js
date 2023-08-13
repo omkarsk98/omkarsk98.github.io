@@ -9,15 +9,15 @@ import { style } from "glamor";
 
 export default function Greeting(props) {
   const theme = props.theme;
-  const history = useHistory();
+  // const history = useHistory();
 
-  const styles = style({
-    backgroundColor: `${theme.accentColor}`,
-    color: `${theme.body}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentColor}`,
-    },
-  });
+  // const styles = style({
+  //   backgroundColor: `${theme.accentColor}`,
+  //   color: `${theme.body}`,
+  //   ":hover": {
+  //     boxShadow: `0 5px 15px ${theme.accentColor}`,
+  //   },
+  // });
 
   return (
     <Fade bottom duration={2000} distance="40px">

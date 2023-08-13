@@ -100,7 +100,7 @@ export default function Main(propss) {
   } else {
     return (
       <div>
-        <BrowserRouter>
+        <HashRouter basename="/">
           <Switch>
             <Route path="/" exact render={(props) => <Redirect to="/sde" />} />
             {/* <Route
@@ -112,7 +112,7 @@ export default function Main(propss) {
               }}
             /> */}
             <Route
-              path="/:role/"
+              path="/:role"
               exact
               render={(props) => (
                 <Home
@@ -168,7 +168,7 @@ export default function Main(propss) {
               )}
             />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }
