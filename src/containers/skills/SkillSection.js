@@ -17,14 +17,15 @@ function GetSkillSvg(props) {
 }
 
 function SkillSection(props) {
-  const theme = props.theme;
+  const { theme, role } = props;
+  if (role === "ds") skills.data = skills.data.reverse();
   return (
     <div>
       {skills.data.map((skill, index) => {
         if (index % 2 === 0) {
           return (
             <div className="skills-main-div">
-              <Fade left duration={2000}>
+              <Fade left duration={1000}>
                 <div className="skills-image-div" style={{ marginTop: 0 }}>
                   <GetSkillSvg fileName={skill.fileName} theme={theme} />
                 </div>
@@ -39,10 +40,10 @@ function SkillSection(props) {
                     {skill.title}
                   </h1>
                 </Fade>
-                <Fade right duration={1500}>
+                <Fade right duration={1000}>
                   <SoftwareSkill logos={skill.softwareSkills} />
                 </Fade>
-                <Fade right duration={2000}>
+                <Fade right duration={1000}>
                   <div>
                     {skill.skills.map((skillSentence) => {
                       return (
@@ -68,10 +69,10 @@ function SkillSection(props) {
                     {skill.title}
                   </h1>
                 </Fade>
-                <Fade left duration={1500}>
+                <Fade left duration={1000}>
                   <SoftwareSkill logos={skill.softwareSkills} />
                 </Fade>
-                <Fade left duration={2000}>
+                <Fade left duration={1000}>
                   <div>
                     {skill.skills.map((skillSentence) => {
                       return (
@@ -86,7 +87,7 @@ function SkillSection(props) {
                   </div>
                 </Fade>
               </div>
-              <Fade right duration={2000}>
+              <Fade right duration={1000}>
                 <div className="skills-image-div" style={{ marginTop: 0 }}>
                   <GetSkillSvg fileName={skill.fileName} theme={theme} />
                 </div>

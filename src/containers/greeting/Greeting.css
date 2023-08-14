@@ -2,7 +2,7 @@
   width: 90%;
   padding: 0px 10px;
   margin: 0px auto;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 .greet-main {
@@ -20,7 +20,7 @@
 
 .greeting-main > * {
   flex: 1;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .button-greeting-div {

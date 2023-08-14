@@ -25,27 +25,24 @@ function Projects(props) {
     <div className="projects-main">
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-projects">
-        <Fade bottom duration={2000} distance="40px">
-          <div className="projects-heading-div">
-            <div className="projects-heading-img-div">
-              <ProjectsImg theme={theme} />
-            </div>
-            <div className="projects-heading-text-div">
-              <h1
-                className="projects-heading-text"
-                style={{ color: theme.text }}
-              >
-                {projectsHeader.title}
-              </h1>
-              <p
-                className="projects-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {projectsHeader["description"]}
-              </p>
-            </div>
+        {/* <Fade bottom duration={2000} distance="40px"> */}
+        <div className="projects-heading-div">
+          <div className="projects-heading-img-div">
+            <ProjectsImg theme={theme} />
           </div>
-        </Fade>
+          <div className="projects-heading-text-div">
+            <h1 className="projects-heading-text" style={{ color: theme.text }}>
+              {projectsHeader.title}
+            </h1>
+            <p
+              className="projects-header-detail-text subTitle"
+              style={{ color: theme.secondaryText }}
+            >
+              {projectsHeader["description"]}
+            </p>
+          </div>
+        </div>
+        {/* </Fade> */}
       </div>
 
       <div

@@ -35,35 +35,35 @@ export default function ProjectCard({ repo, theme }) {
 
   return (
     <div>
-      <Fade bottom duration={2000} distance="40px">
-        <div
-          className="project-card-div"
-          key={repo.id}
-          style={{
-            backgroundColor: theme.projectCard,
-            ":hover": { boxShadow: `${theme.imageDark} 0 2px 15px` },
-          }}
-        >
-          <div className="repo-name-div">
-            <p className="repo-name" style={{ color: theme.text }}>
-              {repo.name}
-            </p>
-          </div>
-          <p className="repo-description" style={{ color: theme.text }}>
-            {typeof repo.description === "string"
-              ? repo.description
-              : getDescriptionList()}
+      {/* <Fade bottom duration={2000} distance="40px"> */}
+      <div
+        className="project-card-div"
+        key={repo.id}
+        style={{
+          backgroundColor: theme.projectCard,
+          // ":hover": { boxShadow: `${theme.imageDark} 0 2px 15px` },
+        }}
+      >
+        <div className="repo-name-div">
+          <p className="repo-name" style={{ color: theme.text }}>
+            {repo.name}
           </p>
-          <div className="flexDiv">
-            <div className="repo-details Leftitem">
-              <ProjectLanguages logos={repo.languages} />
-            </div>
-            <div className="repo-details Rightitem">
-              <ProjectLinks logos={repo.links} />
-            </div>
+        </div>
+        <p className="repo-description" style={{ color: theme.text }}>
+          {typeof repo.description === "string"
+            ? repo.description
+            : getDescriptionList()}
+        </p>
+        <div className="flexDiv">
+          <div className="repo-details Leftitem">
+            <ProjectLanguages logos={repo.languages} />
+          </div>
+          <div className="repo-details Rightitem">
+            <ProjectLinks logos={repo.links} />
           </div>
         </div>
-      </Fade>
+      </div>
+      {/* </Fade> */}
     </div>
   );
 }
