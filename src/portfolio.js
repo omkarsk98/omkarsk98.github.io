@@ -759,6 +759,12 @@ const projects = {
               "https://github.com/omkarsk98/Time-Series-Analysis-on-Temperature-using-ARIMA",
             iconifyClass: "ri:github-fill",
           },
+          {
+            name: "Medium",
+            url:
+              "https://medium.com/@omkarsk98/time-series-analysis-for-temperature-forecast-310232f0fd62",
+            iconifyClass: "bi:medium",
+          },
         ],
       },
     ],
