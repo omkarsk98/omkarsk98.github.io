@@ -9,6 +9,11 @@ import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 import { style } from "glamor";
 
+const customStyles = {
+  ds: "two-col-grid",
+  tableau: "tableau-dashboard-div-col",
+};
+
 function Projects(props) {
   const theme = props.theme;
 
@@ -54,6 +59,20 @@ function Projects(props) {
           return <ProjectCard repo={repo} theme={theme} />;
         })}
       </div>
+      {role === "ds" ? (
+        <div>
+          <h1 className="projects-heading-text" style={{ color: theme.text }}>
+            Tableau Dashboards
+          </h1>
+          <div className="tableau-dashboard-div-col">
+            {projects.tableau.data.map((repo) => {
+              return (
+                <ProjectCard repo={repo} theme={theme} isDashboard={true} />
+              );
+            })}
+          </div>
+        </div>
+      ) : null}
       <br />
       <br />
       <br />

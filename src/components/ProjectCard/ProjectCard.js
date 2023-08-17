@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import ProjectLinks from "../ProjectLinks/ProjectLinks";
 import "./ProjectCard.css";
 import { Fade } from "react-reveal";
 import { style } from "glamor";
+// const file = require(`src/assets/tableau/temp.html`);
 
-export default function ProjectCard({ repo, theme }) {
+export default function ProjectCard({ repo, theme, isDashboard }) {
   // console.log(repo);
   // function openRepoinNewTab(url) {
   //   var win = window.open(url, "_blank");
@@ -33,15 +34,51 @@ export default function ProjectCard({ repo, theme }) {
     );
   };
 
+  useEffect(() => {
+    //
+    const divElement = document.getElementById(repo.divId);
+    if (!divElement) return;
+
+    const vizElement = divElement.getElementsByTagName("object")[0];
+    vizElement.style.width = "100%";
+    vizElement.style.height = "100%";
+    // if (divElement.offsetWidth > 800) {
+    //   // vizElement.style.width = "1142px";
+    //   vizElement.style.height = "2020px";
+    // } else if (divElement.offsetWidth > 500) {
+    //   // vizElement.style.width = "1142px";
+    //   vizElement.style.height = "2020px";
+    // } else {
+    //   // vizElement.style.width = "100%";
+    //   vizElement.style.height = "2527px";
+    // }
+    const scriptElement = document.createElement("script");
+    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  });
+  const getDashboard = () => (
+    <div
+      dangerouslySetInnerHTML={{ __html: repo.content }}
+      style={{ height: "100%" }}
+    />
+  );
+
+  // check if desktop or phone
+  const isDesktop = window.innerWidth > 800;
+
   return (
     <div>
       {/* <Fade bottom duration={2000} distance="40px"> */}
       <div
-        className="project-card-div"
+        className={`project-card-div ${
+          isDashboard ? "tableau-project-card-div" : ""
+        }`}
         key={repo.id}
         style={{
           backgroundColor: theme.projectCard,
           // ":hover": { boxShadow: `${theme.imageDark} 0 2px 15px` },
+          // ...styles,
+          height: isDesktop ? repo.height : repo.phoneHeight,
         }}
       >
         <div className="repo-name-div">
@@ -49,19 +86,32 @@ export default function ProjectCard({ repo, theme }) {
             {repo.name}
           </p>
         </div>
-        <p className="repo-description" style={{ color: theme.text }}>
-          {typeof repo.description === "string"
-            ? repo.description
-            : getDescriptionList()}
-        </p>
-        <div className="flexDiv">
-          <div className="repo-details Leftitem">
-            <ProjectLanguages logos={repo.languages} />
-          </div>
-          <div className="repo-details Rightitem">
-            <ProjectLinks logos={repo.links} />
-          </div>
+        <div className="watch-on-desktop">
+          <p
+            style={{ color: theme.text, fontSize: "0.8em", textAlign: "left" }}
+          >
+            (Watch on desktop for better view)
+          </p>
         </div>
+        {isDashboard ? (
+          getDashboard()
+        ) : (
+          <p className="repo-description" style={{ color: theme.text }}>
+            {typeof repo.description === "string"
+              ? repo.description
+              : getDescriptionList()}
+          </p>
+        )}
+        {!isDashboard && (
+          <div className="flexDiv">
+            <div className="repo-details Leftitem">
+              <ProjectLanguages logos={repo.languages} />
+            </div>
+            <div className="repo-details Rightitem">
+              <ProjectLinks logos={repo.links} />
+            </div>
+          </div>
+        )}
       </div>
       {/* </Fade> */}
     </div>

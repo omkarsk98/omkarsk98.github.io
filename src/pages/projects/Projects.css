@@ -70,6 +70,20 @@
   gap: 1rem 1rem;
 }
 
+.tableau-dashboard-div-col {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 1rem 1rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.watch-on-desktop {
+  /* hide element */
+  display: none;
+}
+
 @media (max-width: 1380px) {
   .projects-heading-text {
     font-size: 50px;
@@ -107,5 +121,16 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 30px;
+  }
+
+  .tableau-dashboard-div-col {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  .watch-on-desktop {
+    /* show element */
+    display: block;
   }
 }

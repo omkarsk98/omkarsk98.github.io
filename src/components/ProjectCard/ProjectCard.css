@@ -103,6 +103,10 @@
   transition: all 0.2s ease-in-out;
 }
 
+.tableau-project-card-div {
+  height: 1000px;
+}
+
 @media (max-width: 768px) {
   .repo-name {
     font-size: 16px;
@@ -123,5 +127,9 @@
 
   .project-card-div {
     padding: 1rem;
+  }
+
+  .tableau-project-card-div {
+    padding: 1em;
   }
 }
