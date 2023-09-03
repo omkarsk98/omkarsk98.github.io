@@ -86,13 +86,19 @@ export default function ProjectCard({ repo, theme, isDashboard }) {
             {repo.name}
           </p>
         </div>
-        <div className="watch-on-desktop">
-          <p
-            style={{ color: theme.text, fontSize: "0.8em", textAlign: "left" }}
-          >
-            (Watch on desktop for better view)
-          </p>
-        </div>
+        {isDashboard && (
+          <div className="watch-on-desktop">
+            <p
+              style={{
+                color: theme.text,
+                fontSize: "0.8em",
+                textAlign: "left",
+              }}
+            >
+              (Watch on desktop for better view)
+            </p>
+          </div>
+        )}
         {isDashboard ? (
           getDashboard()
         ) : (

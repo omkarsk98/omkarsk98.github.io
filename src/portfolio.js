@@ -380,22 +380,26 @@ const experience = {
   title: "Experience",
   subtitle: "Work Experience and Internships",
   description:
-    "Currently, as of August 2023, I am interning at Rockwell Automation. I take greate pride to mention that I have worked with Asort E-Commerce as a Software Developer in the past. I had interned in the same company and thats how they offered me a full time job.",
+    "Currently, as of September 2023, I am in my final semester of me masters. I interned in Rockwell Automation during the summer to develop a batchwise time-series analysis tool. I take great pride to mention that I have worked with Asort E-Commerce as a Software Developer in the past. I had interned in the same company and thats how they offered me a full time job.",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work Experience",
       experiences: [
-        // {
-        //   title: "Data Science Intern",
-        //   company: "Rockwell Automation",
-        //   company_url: "https://www.rockwellautomation.com/en-us.html",
-        //   logo_path: "ra-logo.png",
-        //   duration: "June 2023 - August 2023",
-        //   location: "Gurugram, India",
-        //   description: [],
-        //   color: "#0071C5",
-        // },
+        {
+          title: "Software and Data Science Intern",
+          company: "Rockwell Automation",
+          company_url: "https://www.rockwellautomation.com/en-us.html",
+          logo_path: "ra-logo.png",
+          duration: "June 2023 - August 2023",
+          location: "Gurugram, India",
+          description: [
+            "Built batch analysis tool in React to compare and plot KPIs across batches and analyze the deviation to avoid future quality assurance rejections by 20%.",
+            "Developed JSON based ReSTful APIs in node.js to efficiently expose and plot batch-wise time-series data in visualisation tools by reducing data cleaning effort to 30%.",
+            "Automated data linking to integrate relational database storing KPI logs to achieve loosely coupled and highly interoperable system be eliminating setup configuration time by 90%.",
+          ],
+          color: "#0071C5",
+        },
         {
           title: "Software Developer",
           company: "Asort E-Commerce",
@@ -410,7 +414,6 @@ const experience = {
             "Improvised bug tracking and fixing by improving logs management in AWS Cloudwatch and postman to decrease CRM turn-around-time by 80%.",
             "Architected and prototyped admin, vendors, and distributor dashboards in JavaScript (ES6+) and ReactJS to improve decision making with better insights and analytics.",
           ],
-          // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
           color: "#0071C5",
         },
         {
@@ -425,7 +428,6 @@ const experience = {
             "Integrated ReSTful APIs on admin dashboard to dynamically update mobile application, reducing engineer intervention by 95%.",
             "Automated dynamic sanity tests with Selenium and Appium to lower Quality Assurance effort and time by 80%.",
           ],
-          // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
           color: "#0071C5",
         },
       ],
@@ -547,8 +549,13 @@ const projects = {
         id: "0",
         name: "Distributed File System",
         url: "https://d2pq7x4bcjz9v2.cloudfront.net/",
-        description:
-          "Developed distributed file system in AWS RDS, Cloud Firestore and Mongo Atlas to partition files to search and analyze by implementing map-reduce using ReactJS, node.js and spark.",
+        description: [
+          "Developed a distributed file system to split files into chunks and simulate each chunk as a block of data stored separately.",
+          "Implemented UI based operations where user can create a directory, upload file, view contents, delete file, etc. and search and analyse the stored data",
+          // "Searched and analysed data in ReactJS by applying filters to simulate searching in each block of data.",
+          "Stored these blocks of data in MySQL, Firebase and MongoDB meta data of the file like inode, parentInode and path.",
+          // "Analysed data in pyspark to understand the power of distributed computing.",
+        ],
         languages: [
           {
             name: "NodeJs",
@@ -591,8 +598,11 @@ const projects = {
         id: "1",
         name: "Splitwise JavaScript Library",
         url: "https://github.com/keriwarr/splitwise",
-        description:
-          "Implemented authorization code grant for the Splitwise endorsed JS library having 450+ downloads in javascript and nodejs.",
+        description: [
+          "Contributed to an open sourced node.js library endorsed by Splitwise to integrate Splitwise API in any JavaScript application.",
+          "Implemented authorization code grant with Oauth2.0 to let users use Splitwise window to authenticate and login.",
+          "Implemented API calls to fetch user data, create groups, add expenses, etc.",
+        ],
         languages: [
           {
             name: "NodeJs",
@@ -611,8 +621,11 @@ const projects = {
         id: "2",
         name: "Expense Tracker",
         url: "",
-        description:
-          "Integrated Splitwise API to track expenses and generate reports using ReactJS, NodeJS and MongoDB.",
+        description: [
+          "Programmed a AWS lambda function to fetch data from Splitwise API and store it in MongoDB.",
+          "Implemented a ReactJS application to fetch data from MongoDB and plot it as per category by excluding settlement transactions.",
+          "Update the category and delete the expense from the application so that the categories are changed only for me and other friends can see the original expenses.",
+        ],
         languages: [
           {
             name: "ReactJS",

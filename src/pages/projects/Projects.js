@@ -50,11 +50,7 @@ function Projects(props) {
         {/* </Fade> */}
       </div>
 
-      <div
-        className={`repo-cards-div-main ${
-          role === "ds" ? "two-col-grid" : null
-        }`}
-      >
+      <div className={`repo-cards-div-main two-col-grid`}>
         {projects[role].data.map((repo) => {
           return <ProjectCard repo={repo} theme={theme} />;
         })}
