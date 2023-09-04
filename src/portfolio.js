@@ -646,6 +646,28 @@ const projects = {
         ],
         links: [],
       },
+      {
+        id: "3",
+        name: "Leetcode contest Violation Checker",
+        url: "",
+        description: [
+          "Developed a node.js app to check if a user has violated the leetcode contest rules.",
+          "Implemented a crawler to fetch the users who participated and their submissions.",
+          "Strip out the comments and additional tabs and spaces to hash (md5) the code to buckets and persist the buckets in mongodb.",
+          "Report the users in the buckets where the size of the bucket is greater than 20.",
+        ],
+        languages: [
+          {
+            name: "NodeJs",
+            iconifyClass: "logos-nodejs",
+          },
+          {
+            name: "MongoDB",
+            iconifyClass: "devicon:mongodb-wordmark",
+          },
+        ],
+        links: [],
+      },
     ],
   },
   ds: {
