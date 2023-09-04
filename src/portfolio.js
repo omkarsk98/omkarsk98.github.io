@@ -644,7 +644,13 @@ const projects = {
             iconifyClass: "logos:aws-lambda",
           },
         ],
-        links: [],
+        links: [
+          {
+            name: "Live Demo",
+            url: "https://shershah-3a6cf5.netlify.app/",
+            iconifyClass: "mdi:web",
+          },
+        ],
       },
       {
         id: "3",
