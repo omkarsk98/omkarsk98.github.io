@@ -648,7 +648,7 @@ const projects = {
       },
       {
         id: "3",
-        name: "Leetcode contest Violation Checker",
+        name: "Leetcode Contest Violation Checker",
         url: "",
         description: [
           "Developed a node.js app to check if a user has violated the leetcode contest rules.",
