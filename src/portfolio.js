@@ -684,8 +684,8 @@ const projects = {
         url: "",
         description: [
           "Performed Exploratory Data Analysis and Feature Engineering using pandas to scale data and handle outliers.",
-          "Implemented item based collaborative filtering and xgboost and catboost regressor using grid search for hyperparameter tuning to predict the rating of a restaurant for a user.",
-          "Conducted experimental analysis using a neural network to assess its impact on the recommendation system's RMSE performance in tensorflow.",
+          "Implemented item based collaborative filtering and xgboost and catboost regressor using grid search for hyperparameter tuning to predict the rating with the lowest RMSE of 0.97.",
+          "Conducted experimental analysis using a neural network to assess its impact on the recommendation system's RMSE performance in tensorflow with an RMSE of 1.12.",
         ],
         languages: [
           {
@@ -778,10 +778,11 @@ const projects = {
         name: "Time Series Analysis",
         url: "",
         description: [
-          "Performed exploratory data analysis to clean and understand the monthly temparature data and forecast the upcoming temperature.",
-          "Performed Dickey Fuller test to confirm that the data is stationary.",
-          "Plotted ACF and PACF plots to guess the order of the AR and MA models and implement ARIMA.",
-          "Performed grid search to identify the optimal parameters and implemented auto-arima model that is capable of identifying the orders of the ARIMA model.",
+          "Performed exploratory data analysis to clean and understand the monthly temparature data and forecast the future.",
+          // "Performed Dickey Fuller test to confirm stationary data.",
+          "Plotted ACF and PACF plots to guess the order of the AR and MA models and implement ARIMA to use orders as 8 and 4 for AR and 5 for MA.",
+          "Performed grid search to identify the optimal parameters of (8, 0, 5) and implemented auto-arima model that is capable of identifying the orders of the ARIMA model.",
+          "Recorded a RMSE of 0.4 for the models interpreted from PACF and 0.6 for the auto-arima model.",
         ],
         languages: [
           {
