@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b49c3971.chunk.css",
+    "main.js": "/static/js/main.e1b65044.chunk.js",
+    "main.js.map": "/static/js/main.e1b65044.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.de6673d8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.de6673d8.js.map",
+    "static/js/2.b1efea06.chunk.js": "/static/js/2.b1efea06.chunk.js",
+    "static/js/2.b1efea06.chunk.js.map": "/static/js/2.b1efea06.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.94e692f980fc79231c4f26ea279248ff.js": "/precache-manifest.94e692f980fc79231c4f26ea279248ff.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b49c3971.chunk.css.map": "/static/css/main.b49c3971.chunk.css.map",
+    "static/js/2.b1efea06.chunk.js.LICENSE.txt": "/static/js/2.b1efea06.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
+    "static/media/ds-image.svg": "/static/media/ds-image.e0c02a05.svg",
+    "static/media/all.css": "/static/media/fa-solid-900.c2801fb4.svg",
+    "static/media/hackathon1.svg": "/static/media/hackathon1.7a2dbf7a.svg",
+    "static/media/mlh-logo.svg": "/static/media/mlh-logo.bc5cfd3a.svg",
+    "static/media/mongo.png": "/static/media/mongo.d324ee17.png",
+    "static/media/muj-logo.png": "/static/media/muj-logo.05632e1c.png",
+    "static/media/postman.jpg": "/static/media/postman.22f11067.jpg",
+    "static/media/postman.png": "/static/media/postman.c108f557.png",
+    "static/media/ra-logo.png": "/static/media/ra-logo.64c27a79.png",
+    "static/media/skillenza.png": "/static/media/skillenza.7b7a76ef.png",
+    "static/media/ssec.png": "/static/media/ssec.8901092d.png",
+    "static/media/ssgandhy.png": "/static/media/ssgandhy.894ef0fc.png",
+    "static/media/usclogo.png": "/static/media/usclogo.27457c91.png",
+    "static/media/valora.jpg": "/static/media/valora.246ad3ed.jpg",
+    "static/media/wrighter.jpg": "/static/media/wrighter.02fdae43.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de6673d8.js",
+    "static/js/2.b1efea06.chunk.js",
+    "static/css/main.b49c3971.chunk.css",
+    "static/js/main.e1b65044.chunk.js"
+  ]
+}
