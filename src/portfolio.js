@@ -14,7 +14,8 @@ const greeting = {
   logo_name: "omkarsk98()",
   nickname: "Kullya",
   full_name: "Omkar Kulkarni",
-  subTitle: "MERN Stack Developer and a Data Scientist. Always learning.",
+  subTitle:
+    "MERN Stack Developer and a Data Scientist. I am open to Software Engineer roles.!",
   resumeLink: "",
   mail: "mailto:omkarsk98@gmail.com",
 };
@@ -380,7 +381,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work Experience and Internships",
   description:
-    "Currently, as of September 2023, I am in my final semester of me masters. I interned in Rockwell Automation during the summer to develop a batchwise time-series analysis tool. I take great pride to mention that I have worked with Asort E-Commerce as a Software Developer in the past. I had interned in the same company and thats how they offered me a full time job.",
+    "Currently, as of January 2024, I have graduated from USC and looking for a full time role as a Software Engineer. I am open to Full Stack, Frontend, Backend Software Engineer roles. I interned in Rockwell Automation during the summer to develop a batchwise time-series analysis tool. I take great pride to mention that I have worked with Asort E-Commerce as a Software Developer in the past. I had interned in the same company and thats how they offered me a full time job.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -647,7 +648,7 @@ const projects = {
         links: [
           {
             name: "Live Demo",
-            url: "https://shershah-3a6cf5.netlify.app/",
+            url: "https://shershah-expenses.netlify.app/",
             iconifyClass: "mdi:web",
           },
         ],

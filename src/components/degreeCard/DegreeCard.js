@@ -34,12 +34,6 @@ function DegreeCard(props) {
     borderRadius: "7px",
     width: "90%",
     margin: "10px",
-    // boxShadow: `0px 1px 5px ${theme.accentColor}`,
-    // transition: "all 0.2s ease-in-out",
-    // ":hover": {
-    //   color: "rgba(255, 255, 255, 1)",
-    //   boxShadow: `0 5px 15px ${theme.accentColor}`,
-    // },
     "@media (max-width: 768px)": {
       width: "100%",
     },
@@ -83,7 +77,7 @@ function DegreeCard(props) {
       </div>
       {/* </Flip> */}
       {/* <Fade right duration={2000} distance="40px"> */}
-      <div {...card_body}>
+      <div {...card_body} className="degree-details">
         <div
           className="body-header"
           style={{ backgroundColor: theme.accentColor }}

@@ -30,7 +30,7 @@ function Education(props) {
               style={{ color: theme.secondaryText }}
             >
               I actively learn and experiment open sourced tools and
-              technologies. Below are some of my major certifications.
+              technologies.
             </p>
           </div>
         </div>
