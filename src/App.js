@@ -6,16 +6,14 @@ import { themes } from "./theme";
 import { GlobalStyles } from "./global";
 import { CursorProvider } from "react-cursor-custom";
 import { settings } from "./portfolio";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
+ReactGA.initialize(settings.googleTrackingID);
+ReactGA.send({
+  hitType: "pageview",
+  page: window.location.pathname,
+});
 
 function App() {
-  useEffect(() => {
-    if (settings.googleTrackingID) {
-      ReactGA.initialize(settings.googleTrackingID);
-      ReactGA.pageview(window.location.pathname + window.location.search);
-    }
-  }, []);
-
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   return (
