@@ -5,6 +5,10 @@
 .basic-education {
   margin-left: 5%;
   margin-right: 5%;
+  @media (max-width: 1024px) {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 
 .heading-div {

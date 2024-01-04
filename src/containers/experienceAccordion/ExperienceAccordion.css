@@ -20,9 +20,9 @@
   background-color: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .experience-accord {
-    margin: 10px;
+    margin: 5%;
     padding: 0px;
   }
 }
