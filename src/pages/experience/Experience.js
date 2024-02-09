@@ -4,13 +4,16 @@ import Footer from "../../components/footer/Footer";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
 import "./Experience.css";
 import { experience } from "../../portfolio.js";
-import { Fade } from "react-reveal";
+import { Helmet } from "react-helmet";
 import ExperienceImg from "./ExperienceImg";
 
 function Experience(props) {
   const theme = props.theme;
   return (
     <div className="experience-main">
+      <Helmet>
+        <title>Experience</title>
+      </Helmet>
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-experience">
         {/* <Fade bottom duration={2000} distance="40px"> */}

@@ -3,7 +3,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Redirect, Link } from "react-router-dom";
-import { Fade } from "react-reveal";
+import { Helmet } from "react-helmet";
 import { projectsHeader, projects } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
@@ -28,6 +28,9 @@ function Projects(props) {
 
   return (
     <div className="projects-main">
+      <Helmet>
+        <title>Projects</title>
+      </Helmet>
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-projects">
         {/* <Fade bottom duration={2000} distance="40px"> */}

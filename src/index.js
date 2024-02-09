@@ -9,6 +9,11 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "./assests/font-awesome/css/all.css";
+import ReactGA from "react-ga4";
+import { settings } from "./portfolio";
+
+ReactGA.initialize(settings.googleTrackingID);
+ReactGA.send("pageview");
 
 const engine = new Styletron();
 

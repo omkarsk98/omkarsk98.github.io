@@ -547,14 +547,54 @@ const projects = {
   sde: {
     data: [
       {
+        id: "-1",
+        name: "Fault-Tolerant Key-Value Store",
+        description: [
+          "Implemented the Raft consensus algorithm in C++ with timeout and heartbeat based leader election to ensure high availability.",
+          "Maximized fault tolerance through optimized committed log replication, ensuring efficient recovery within Raft's protocol.",
+          "Built a key-value store with partitioning and sharing to efficiently utilise multiple nodes and ensure uninterrupted client request processing in the presence of failures or network partitions with failure identification and resharding.",
+        ],
+        languages: [
+          {
+            name: "C++",
+            iconifyClass: "skill-icons:cpp",
+          },
+        ],
+        links: [],
+      },
+      {
+        id: "-1",
+        name: "Restaurant Recommendation System",
+        // url: "https://d2pq7x4bcjz9v2.cloudfront.net/",
+        description: [
+          "Performed Exploratory Data Analysis and Feature Engineering using pandas to scale data and eliminate outliers.",
+          "Implemented algorithms like item based collaborative filtering, xgboost and catboost regressor in pyspark using grid search for hyperparameter tuning to estimate the rating of a restaurant for a user.",
+          "Performed search and analytics using pyspark RDD over AWS  to study and exploit the efficiency boost of distributed computing.",
+        ],
+        languages: [
+          {
+            name: "Python",
+            iconifyClass: "logos:python",
+          },
+          {
+            name: "PySpark",
+            iconifyClass: "devicon:apachespark-wordmark",
+          },
+          {
+            name: "Tensorflow",
+            iconifyClass: "logos:tensorflow",
+          },
+        ],
+        links: [],
+      },
+      {
         id: "0",
         name: "Distributed File System",
-        url: "https://d2pq7x4bcjz9v2.cloudfront.net/",
+        url: "https://emulated-distributed-file-system.netlify.app/",
         description: [
-          "Developed a distributed file system to split files into chunks and simulate each chunk as a block of data stored separately.",
-          "Implemented UI based operations where user can create a directory, upload file, view contents, delete file, etc. and search and analyse the stored data",
-          // "Searched and analysed data in ReactJS by applying filters to simulate searching in each block of data.",
-          "Stored these blocks of data in MySQL, Firebase and MongoDB meta data of the file like inode, parentInode and path.",
+          "Developed a distributed file system with custom user defined partitioning simulate each partition as separate data blocks.",
+          "Implemented front-end in React.js to emulate file system operations of directory listing, file partitioning, content inspection, file deletion and searching and analysing the stored data with ReST APIs in node.js.",
+          "Partitioned these blocks of data in MySQL, Firebase and MongoDB with meta data of the files like inode, parentInode and path, size and partitioning field.",
           // "Analysed data in pyspark to understand the power of distributed computing.",
         ],
         languages: [
