@@ -9,13 +9,13 @@ const settings = {
 
 //Home Page
 const greeting = {
-  title: "Hello 👋.",
+  title: "Hello 🙏!!",
   title2: "Omkar",
   logo_name: "omkarsk98()",
   nickname: "Kullya",
   full_name: "Omkar Kulkarni",
   subTitle:
-    "MERN Stack Developer and a Data Scientist. I am open to Software Engineer roles.!",
+    "MERN Stack Developer and a Data Scientist. I am currently on my F1-OPT visa (OPT period until February 2025) and open to Software Engineer roles.!",
   resumeLink: "",
   mail: "mailto:omkarsk98@gmail.com",
 };
@@ -42,6 +42,12 @@ const socialMediaLinks = [
     name: "Leetcode",
     url: "https://leetcode.com/omkarsk98",
     icon: "simple-icons:leetcode",
+  },
+  {
+    name: "Projects",
+    tab: "projects",
+    text: "Projects",
+    type: "button",
   },
 ];
 

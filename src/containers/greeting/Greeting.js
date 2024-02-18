@@ -37,6 +37,21 @@ export default function Greeting(props) {
                 {greeting.subTitle}
               </p>
               <SocialMedia />
+              <p
+                className="greeting-text-p subTitle"
+                style={{ color: theme.secondaryText }}
+              >
+                <span style={{ fontSize: "0.8em" }}>{"Checkout my "}</span>
+                <span style={{ fontSize: "0.9em" }}>
+                  <a
+                    href={`/#/${props.role}/projects`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span style={{ color: theme.accentColor }}>Projects</span>
+                  </a>
+                </span>
+              </p>
+              <div></div>
               {/* <div className="portfolio-repo-btn-div">
                 <button
                   {...styles}
