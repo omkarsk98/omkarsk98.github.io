@@ -282,7 +282,7 @@ const degrees = {
       descriptions: [
         "⚡ I'm currently pursuing my masters in Computer Science and specialising in Data Science.",
         "⚡ As part of my specialisation, I have studied, Database Systems, Data Mining, Natural Language Processing, Information Retrieval etc.",
-        "⚡ I have secured 3.67/4 CGPA.",
+        "⚡ I have secured 3.71/4 CGPA.",
       ],
       website_link: "https://www.usc.edu/",
     },
@@ -295,7 +295,7 @@ const degrees = {
       descriptions: [
         "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
         "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course. ",
-        "⚡ I have secured 9.04/10 CGPA.",
+        "⚡ I have secured 9.04/10 (3.6/4) CGPA.",
       ],
       website_link: "https://jaipur.manipal.edu/",
     },
