@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import ProjectLinks from "../ProjectLinks/ProjectLinks";
 import "./ProjectCard.css";
-import { Fade } from "react-reveal";
-import { style } from "glamor";
 // const file = require(`src/assets/tableau/temp.html`);
 
 export default function ProjectCard({ repo, theme, isDashboard }) {
@@ -68,8 +66,9 @@ export default function ProjectCard({ repo, theme, isDashboard }) {
 
   return (
     <div
-      className={`project-card-div ${isDashboard ? "tableau-project-card-div" : ""
-        }`}
+      className={`project-card-div ${
+        isDashboard ? "tableau-project-card-div" : ""
+      }`}
       key={repo.id}
       style={{
         backgroundColor: theme.projectCard,

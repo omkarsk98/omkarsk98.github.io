@@ -1,6 +1,5 @@
 import React from "react";
 import "./DegreeCard.css";
-import { Fade, Flip } from "react-reveal";
 import { style } from "glamor";
 
 function DegreeCard(props) {

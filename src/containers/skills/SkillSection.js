@@ -4,7 +4,6 @@ import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FullStackImg from "./FullStackImg";
-import CloudInfraImg from "./CloudInfraImg";
 import DataScienceImg from "./DataScienceImg";
 // import DesignImg from "./DesignImg";
 

@@ -281,7 +281,7 @@ const degrees = {
       duration: "January 2022 - December 2023",
       descriptions: [
         "⚡ I'm currently pursuing my masters in Computer Science and specialising in Data Science.",
-        "⚡ As part of my specialisation, I have studied, Database Systems, Data Mining, Natural Language Processing, Information Retrieval etc.",
+        "⚡ As part of my specialisation, I have studied, Distributed Systems, Database Systems, Data Mining, Natural Language Processing, Information Retrieval etc.",
         "⚡ I have secured 3.71/4 CGPA.",
       ],
       website_link: "https://www.usc.edu/",
@@ -401,9 +401,9 @@ const experience = {
           duration: "June 2023 - August 2023",
           location: "Gurugram, India",
           description: [
-            "Built batch analysis tool in React to compare and plot KPIs across batches and analyze the deviation to avoid future quality assurance rejections by 20%.",
-            "Developed JSON based ReSTful APIs in node.js to efficiently expose and plot batch-wise time-series data in visualisation tools by reducing data cleaning effort to 30%.",
-            "Automated data linking to integrate relational database storing KPI logs to achieve loosely coupled and highly interoperable system be eliminating setup configuration time by 90%.",
+            "Developed JSON-based ReSTful APIs with back-end in node.js to efficiently expose and plot batch-wise time-series data in visualization tools, reducing data cleaning effort by 30%.",
+            "Built a batch analysis tool with front-end in React by integrating ReST API to compare and plot KPIs across batches, reducing quality assurance rejections by 20%.",
+            "Achieved a 90% reduction in setup configuration time by automating data linking to integrate relational database storing KPI logs, resulting in a loosely coupled and highly interoperable system.",
           ],
           color: "#0071C5",
         },
@@ -415,11 +415,11 @@ const experience = {
           duration: "January 2020 - November 2021",
           location: "Gurugram, India",
           description: [
-            "Engineered over 10 microservices in distributed environments in nodejs and ReactJS using agile project management to ship high quality code to production hosted on AWS.",
-            "Built over 50 ReSTful APIs in node.js and ReactJS for catalog search, product checkout, distributor management and admin dashboard serving close to 5000 customers per day.",
-            "Optimized over 20 crucial mysql and mongodb queries by indexing, denormalizing and caching to cut down database instances by 50%.",
-            "Improvised bug tracking and fixing by improving logs management in AWS Cloudwatch and postman to decrease CRM turn-around-time by 80%.",
-            "Architected and prototyped admin, vendors, and distributor dashboards in JavaScript (ES6+) and ReactJS to improve decision making with better insights and analytics.",
+            "Developed over 10 microservices in Node.js and ReactJS, utilising agile project management methodologies and cross-functional teaming to deploy on AWS production environment.",
+            "Built over 50 ReSTful APIs in Node.js and ReactJS for catalog search, product checkout, distributor management, and admin dashboard by collaborating with product management and analysing user feedback, serving 100k requests daily.",
+            "Optimised over 20 critical MySQL and MongoDB queries, resulting in a 50% reduction in database instances through indexing, denormalisation, and redis based in-memory caching.",
+            "Enhanced bug tracking and resolution with root cause analysis by enhancing logs management in AWS Cloudwatch and Postman, decreasing customer care turn-around-time by 80%.",
+            "Architected and prototyped front-end dashboards in JavaScript (ES6+) and ReactJS for admin, vendors, and distributors, enabling better decision-making with improved insights and analytics.",
           ],
           color: "#0071C5",
         },
@@ -636,7 +636,7 @@ const projects = {
         links: [
           {
             name: "Live Demo",
-            url: "https://d2pq7x4bcjz9v2.cloudfront.net/",
+            url: "https://emulated-distributed-file-system.netlify.app",
             iconifyClass: "mdi:web",
           },
         ],
@@ -727,7 +727,7 @@ const projects = {
     data: [
       {
         id: "0",
-        name: "Restaurant Recommendation System - Data Mining",
+        name: "Restaurant Recommendation System",
         url: "",
         description: [
           "Performed Exploratory Data Analysis and Feature Engineering using pandas to scale data and handle outliers.",
@@ -773,8 +773,8 @@ const projects = {
       },
       {
         id: "2",
-        name: "Distributed File System - Data Management",
-        url: "https://d2pq7x4bcjz9v2.cloudfront.net/",
+        name: "Distributed File System",
+        url: "https://emulated-distributed-file-system.netlify.app/",
         description: [
           "Developed a distributed file system to split files into chunks and simulate each chunk as a block of data stored separately.",
           "Implemented UI based operations where user can create a directory, upload file, view contents, delete file, etc.",
@@ -815,7 +815,7 @@ const projects = {
         links: [
           {
             name: "Live Demo",
-            url: "https://d2pq7x4bcjz9v2.cloudfront.net/",
+            url: "https://emulated-distributed-file-system.netlify.app",
             iconifyClass: "mdi:web",
           },
         ],

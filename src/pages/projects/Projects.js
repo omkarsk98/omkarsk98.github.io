@@ -2,27 +2,15 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import { Redirect, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { projectsHeader, projects } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
-import { style } from "glamor";
-
-const customStyles = {
-  ds: "two-col-grid",
-  tableau: "tableau-dashboard-div-col",
-};
 
 function Projects(props) {
   const theme = props.theme;
 
-  const styles = style({
-    backgroundColor: `${theme.accentColor}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentColor}`,
-    },
-  });
   // get :role from url params
   const { role } = props.match.params;
 
