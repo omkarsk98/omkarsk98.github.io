@@ -16,8 +16,8 @@ export default (props) => {
     <HashRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/sde" />} />
-        <Route path="/#/sde" element={<Navigate to="/sde" />} />
-        <Route path="/#/ds" element={<Navigate to="/ds" />} />
+        {/* <Route path="/#/sde" element={<Navigate to="/sde" />} />
+        <Route path="/#/ds" element={<Navigate to="/ds" />} /> */}
         <Route path="/:role" element={<Home />} />
         <Route path="/:role/experience" element={<Experience {...props} />} />
         <Route path="/:role/education" element={<Education {...props} />} />
