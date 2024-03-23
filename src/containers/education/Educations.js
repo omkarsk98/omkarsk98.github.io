@@ -4,8 +4,7 @@ import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import { degrees } from "../../portfolio";
 
 function Educations(props) {
-  const theme = props.theme;
-
+  const { theme } = props;
   return (
     <div className="main" id="educations">
       <div className="educations-header-div">
@@ -17,7 +16,9 @@ function Educations(props) {
       </div>
       <div className="educations-body-div">
         {degrees.degrees.map((degree) => {
-          return <DegreeCard degree={degree} theme={theme} />;
+          return (
+            <DegreeCard degree={degree} {...props} key={degree.subtitle} />
+          );
         })}
       </div>
     </div>

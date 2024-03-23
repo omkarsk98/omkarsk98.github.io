@@ -1,17 +1,11 @@
 import React from "react";
 import "./Header.css";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useParams } from "react-router-dom";
 import { greeting } from "../../portfolio.js";
+import LightTheme from "../../theme";
 
 function Header(props) {
-  // get url params
-  const url = window.location.href;
-  const urlParam = url.split("/");
-  const role = urlParam.includes("ds") ? "ds" : "sde";
-  const theme = props.theme;
-
-  // const activeStyle = { fontWeight: "bold", backgroundColor: theme.accentColor, color: "#fff" };
-  const activeStyle = {};
+  const { role = "sde" } = useParams();
 
   const link = role === "ds" ? "/ds" : "/sde";
 
@@ -20,11 +14,9 @@ function Header(props) {
     <div>
       <header className="header">
         <NavLink to={link} tag={Link} className="logo">
-          <span style={{ color: theme.text }}></span>
-          <span className="logo-name" style={{ color: theme.text }}>
+          <span className="logo-name" style={{ color: LightTheme.text }}>
             {greeting.logo_name}
           </span>
-          <span style={{ color: theme.text }}></span>
         </NavLink>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">
@@ -36,8 +28,7 @@ function Header(props) {
               className="homei"
               to={`/${role}/`}
               tag={Link}
-              activeStyle={activeStyle}
-              style={{ borderRadius: 5, color: theme.text }}
+              style={{ borderRadius: 5, color: LightTheme.text }}
             >
               Home
             </NavLink>
@@ -47,10 +38,9 @@ function Header(props) {
               className="ec"
               to={`/${role}/education`}
               tag={Link}
-              activeStyle={activeStyle}
-              style={{ borderRadius: 5, color: theme.text }}
+              style={{ borderRadius: 5, color: LightTheme.text }}
             >
-              Education and Certifications
+              Education
             </NavLink>
           </li>
           <li>
@@ -58,8 +48,7 @@ function Header(props) {
               className="xp"
               to={`/${role}/experience`}
               tag={Link}
-              activeStyle={activeStyle}
-              style={{ borderRadius: 5, color: theme.text }}
+              style={{ borderRadius: 5, color: LightTheme.text }}
             >
               Experience
             </NavLink>
@@ -69,8 +58,7 @@ function Header(props) {
               className="projects"
               to={`/${role}/projects`}
               tag={Link}
-              activeStyle={activeStyle}
-              style={{ borderRadius: 5, color: theme.text }}
+              style={{ borderRadius: 5, color: LightTheme.text }}
             >
               Projects
             </NavLink>

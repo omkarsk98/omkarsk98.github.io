@@ -35,4 +35,5 @@ const darkTheme = {
   avatarShoes: "#2B2B2B",
 };
 
-export const themes = { light: lightTheme, dark: darkTheme };
+export default lightTheme;
+// export const themes = { light: lightTheme, dark: darkTheme };

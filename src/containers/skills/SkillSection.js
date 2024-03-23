@@ -5,18 +5,19 @@ import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FullStackImg from "./FullStackImg";
 import DataScienceImg from "./DataScienceImg";
-// import DesignImg from "./DesignImg";
+import LightTheme from "../../theme";
+import { useParams } from "react-router-dom";
 
 function GetSkillSvg(props) {
   if (props.fileName === "FullStackImg")
-    return <FullStackImg theme={props.theme} />;
+    return <FullStackImg theme={LightTheme} />;
   else if (props.fileName === "CloudInfraImg")
-    return <DataScienceImg theme={props.theme} />;
+    return <DataScienceImg theme={LightTheme} />;
   // return <DesignImg theme={props.theme} />;
 }
 
 function SkillSection(props) {
-  const { theme, role } = props;
+  const { role = "sde" } = useParams();
   if (role === "ds") skills.data = skills.data.reverse();
   return (
     <div>
@@ -26,7 +27,7 @@ function SkillSection(props) {
             <div className="skills-main-div">
               <Fade left duration={1000}>
                 <div className="skills-image-div" style={{ marginTop: 0 }}>
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
+                  <GetSkillSvg fileName={skill.fileName} theme={LightTheme} />
                 </div>
               </Fade>
 
@@ -35,7 +36,10 @@ function SkillSection(props) {
                 style={{ marginTop: 0, paddingTop: 0 }}
               >
                 <Fade right duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
+                  <h1
+                    className="skills-heading"
+                    style={{ color: LightTheme.text }}
+                  >
                     {skill.title}
                   </h1>
                 </Fade>
@@ -48,7 +52,7 @@ function SkillSection(props) {
                       return (
                         <p
                           className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
+                          style={{ color: LightTheme.secondaryText }}
                         >
                           {skillSentence}
                         </p>
@@ -64,7 +68,10 @@ function SkillSection(props) {
             <div className="skills-main-div">
               <div className="skills-text-div" style={{ marginTop: 0 }}>
                 <Fade left duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
+                  <h1
+                    className="skills-heading"
+                    style={{ color: LightTheme.text }}
+                  >
                     {skill.title}
                   </h1>
                 </Fade>
@@ -77,7 +84,7 @@ function SkillSection(props) {
                       return (
                         <p
                           className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
+                          style={{ color: LightTheme.secondaryText }}
                         >
                           {skillSentence}
                         </p>
@@ -88,7 +95,7 @@ function SkillSection(props) {
               </div>
               <Fade right duration={1000}>
                 <div className="skills-image-div" style={{ marginTop: 0 }}>
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
+                  <GetSkillSvg fileName={skill.fileName} theme={LightTheme} />
                 </div>
               </Fade>
             </div>

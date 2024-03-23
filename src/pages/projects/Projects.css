@@ -3,6 +3,15 @@
   text-align: center;
 }
 
+.other-projects {
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-family: "Google Sans Regular";
+  cursor: pointer;
+}
+
 .basic-projects {
   margin-left: 5%;
   margin-right: 5%;

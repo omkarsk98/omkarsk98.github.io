@@ -26,7 +26,7 @@ export default function ProjectCard({ repo, theme, isDashboard }) {
     return (
       <ul>
         {repo.description.map((item) => (
-          <li>{item}</li>
+          <li key={item.slice(20)}>{item}</li>
         ))}
       </ul>
     );
@@ -38,18 +38,9 @@ export default function ProjectCard({ repo, theme, isDashboard }) {
     if (!divElement) return;
 
     const vizElement = divElement.getElementsByTagName("object")[0];
+    if (!vizElement) return;
     vizElement.style.width = "100%";
     vizElement.style.height = "100%";
-    // if (divElement.offsetWidth > 800) {
-    //   // vizElement.style.width = "1142px";
-    //   vizElement.style.height = "2020px";
-    // } else if (divElement.offsetWidth > 500) {
-    //   // vizElement.style.width = "1142px";
-    //   vizElement.style.height = "2020px";
-    // } else {
-    //   // vizElement.style.width = "100%";
-    //   vizElement.style.height = "2527px";
-    // }
     const scriptElement = document.createElement("script");
     scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -98,11 +89,11 @@ export default function ProjectCard({ repo, theme, isDashboard }) {
       {isDashboard ? (
         getDashboard()
       ) : (
-        <p className="repo-description" style={{ color: theme.text }}>
+        <div className="repo-description" style={{ color: theme.text }}>
           {typeof repo.description === "string"
             ? repo.description
             : getDescriptionList()}
-        </p>
+        </div>
       )}
       {!isDashboard && (
         <div className="flexDiv">

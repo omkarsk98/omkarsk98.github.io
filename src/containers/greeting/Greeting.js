@@ -4,67 +4,48 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import LightTheme from "../../theme";
+import { useParams } from "react-router-dom";
 
 export default function Greeting(props) {
-  const theme = props.theme;
-  // const history = useHistory();
-
-  // const styles = style({
-  //   backgroundColor: `${theme.accentColor}`,
-  //   color: `${theme.body}`,
-  //   ":hover": {
-  //     boxShadow: `0 5px 15px ${theme.accentColor}`,
-  //   },
-  // });
+  const { role } = useParams();
 
   return (
     <Fade bottom duration={2000} distance="40px">
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
-            <div>
-              <h1 className="greeting-text">{greeting.title}</h1>
-              <p
-                className="greeting-text-p subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                <span>I'm </span>
-                <span style={{ color: theme.accentColor }}>
-                  {greeting.full_name}.{" "}
-                </span>
-                {greeting.subTitle}
-              </p>
-              <SocialMedia />
-              <p
-                className="greeting-text-p subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                <span style={{ fontSize: "0.8em" }}>{"Checkout my "}</span>
-                <span style={{ fontSize: "0.9em" }}>
-                  <a
-                    href={`/#/${props.role}/projects`}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <span style={{ color: theme.accentColor }}>Projects</span>
-                  </a>
-                </span>
-              </p>
-              <div></div>
-              {/* <div className="portfolio-repo-btn-div">
-                <button
-                  {...styles}
-                  className="button"
-                  onClick={() => {
-                    history.push("/contact");
-                  }}
+            <h1 className="greeting-text">{greeting.title}</h1>
+            <p
+              className="greeting-text-p subTitle"
+              style={{ color: LightTheme.secondaryText }}
+            >
+              <span>I'm </span>
+              <span style={{ color: LightTheme.accentColor }}>
+                {greeting.full_name}.{" "}
+              </span>
+              {greeting.subTitle}
+            </p>
+            <SocialMedia />
+            <p
+              className="greeting-text-p subTitle"
+              style={{ color: LightTheme.secondaryText }}
+            >
+              <span style={{ fontSize: "0.8em" }}>{"Checkout my "}</span>
+              <span style={{ fontSize: "0.9em" }}>
+                <a
+                  href={`/${role}/projects`}
+                  style={{ textDecoration: "none" }}
                 >
-                  Contact Me
-                </button>
-              </div> */}
-            </div>
+                  <span style={{ color: LightTheme.accentColor }}>
+                    Projects
+                  </span>
+                </a>
+              </span>
+            </p>
           </div>
           <div className="greeting-image-div">
-            <FeelingProud theme={theme} />
+            <FeelingProud theme={LightTheme} />
           </div>
         </div>
       </div>

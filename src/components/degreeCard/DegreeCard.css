@@ -6,10 +6,10 @@
 }
 
 .degree-details {
-  border-radius: "7px";
-  width: "90%";
-  margin: "10px";
-  transition: "all 0.2s ease-in-out";
+  border-radius: 5px;
+  width: 90%;
+  margin: 10px;
+  /* transition: all 0.2s ease-in-out; */
 
   @media (max-width: 768px) {
     width: 100%;
@@ -45,7 +45,7 @@
 .body-header {
   max-width: inherit;
   display: flex;
-  border-radius: 7px 7px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
   padding: 10px;
 }
 
@@ -81,7 +81,7 @@
 @media (max-width: 768px) {
   .degree-card {
     flex-direction: column;
-    padding-inline: 10px;
+    /* padding-inline: 10px; */
   }
 
   .body-header {

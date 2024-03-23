@@ -71,4 +71,9 @@
   .heading-div {
     flex-direction: column;
   }
+
+  .educations-body-div {
+    margin: 5%;
+    padding: 0px;
+  }
 }

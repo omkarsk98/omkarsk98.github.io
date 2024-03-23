@@ -74,7 +74,8 @@
   margin: 0;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
+  flex-grow: 1;
 }
 
 .Leftitem {
@@ -101,6 +102,9 @@
   border-radius: 5px;
   height: 100%;
   transition: all 0.2s ease-in-out;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .tableau-project-card-div {

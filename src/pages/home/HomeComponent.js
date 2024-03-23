@@ -1,18 +1,20 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import Header from "../../components/header/Header";
 import Greeting from "../../containers/greeting/Greeting";
 import Skills from "../../containers/skills/Skills";
 import Footer from "../../components/footer/Footer";
 
 function Home(props) {
-  const { role = "sde" } = props?.match?.params || {};
+  const { role = "sde" } = useParams();
+  console.log("role:", role, props);
   return (
-    <div>
-      <Header theme={props.theme} setTheme={props.setTheme} />
-      <Greeting theme={props.theme} role={role} />
-      <Skills theme={props.theme} role={role} />
-      <Footer theme={props.theme} />
-    </div>
+    <>
+      <Header />
+      <Greeting />
+      <Skills />
+      <Footer />
+    </>
   );
 }
 
