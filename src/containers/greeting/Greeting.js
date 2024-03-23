@@ -5,7 +5,7 @@ import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
 import LightTheme from "../../theme";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 export default function Greeting(props) {
   const { role } = useParams();
@@ -33,14 +33,14 @@ export default function Greeting(props) {
             >
               <span style={{ fontSize: "0.8em" }}>{"Checkout my "}</span>
               <span style={{ fontSize: "0.9em" }}>
-                <a
-                  href={`/${role}/projects`}
+                <Link
+                  to={`/${role}/projects`}
                   style={{ textDecoration: "none" }}
                 >
                   <span style={{ color: LightTheme.accentColor }}>
                     Projects
                   </span>
-                </a>
+                </Link>
               </span>
             </p>
           </div>
