@@ -2,17 +2,25 @@ import React from "react";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
 
-export default function socialMedia() {
+export default function socialMedia(props) {
+  const { theme } = props;
   return socialMediaLinks.map((site) => {
     return (
-      <a href={site.url} target="_blank" style={{ color: "inherit" }}>
-        <span
-          key={site.name}
-          className={`iconify icon-button ${site.className} ${site.faClassName}`}
-          data-icon={site.icon}
-          style={{ width: "2em", height: "2em", marginInline: "10px" }}
-        ></span>
-      </a>
+      <div className="social-media-link">
+        <a href={site.url} target="_blank" style={{ color: "inherit" }}>
+          <div
+            key={site.name}
+            className={`iconify icon-button`}
+            data-icon={site.icon}
+            style={{ width: "2em", height: "2em", marginInline: "10px" }}
+          ></div>
+        </a>
+        {site.tag && (
+          <div className="site-tag" style={{ color: theme.accentColor }}>
+            {site.tag}
+          </div>
+        )}
+      </div>
     );
   });
 }

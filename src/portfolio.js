@@ -42,12 +42,7 @@ const socialMediaLinks = [
     name: "Leetcode",
     url: "https://leetcode.com/omkarsk98",
     icon: "simple-icons:leetcode",
-  },
-  {
-    name: "Projects",
-    tab: "projects",
-    text: "Projects",
-    type: "button",
+    tag: "Knight",
   },
 ];
 

@@ -7,7 +7,6 @@ import Footer from "../../components/footer/Footer";
 
 function Home(props) {
   const { role = "sde" } = useParams();
-  console.log("role:", role, props);
   return (
     <>
       <Header />

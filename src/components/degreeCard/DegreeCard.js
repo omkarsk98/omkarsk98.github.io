@@ -108,11 +108,11 @@ function DegreeCard(props) {
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none", textAlign: "center" }}
+            className="visit-website"
           >
             <p
               {...button_visit}
               style={{
-                marginRight: "23px",
                 textDecoration: "none",
                 float: "right",
                 // backgroundColor: theme.accentColor,

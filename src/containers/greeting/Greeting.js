@@ -26,13 +26,15 @@ export default function Greeting(props) {
               </span>
               {greeting.subTitle}
             </p>
-            <SocialMedia />
+            <div className="social-media-links">
+              <SocialMedia theme={LightTheme} />
+            </div>
             <p
-              className="greeting-text-p subTitle"
+              className="greeting-text-p subTitle checkout-my-projects"
               style={{ color: LightTheme.secondaryText }}
             >
-              <span style={{ fontSize: "0.8em" }}>{"Checkout my "}</span>
-              <span style={{ fontSize: "0.9em" }}>
+              <span className="checkout-my">{"Checkout my "}</span>
+              <span className="checkout-my-projects-link">
                 <Link
                   to={`/${role}/projects`}
                   style={{ textDecoration: "none" }}

@@ -24,7 +24,7 @@ function SkillSection(props) {
       {skills.data.map((skill, index) => {
         if (index % 2 === 0) {
           return (
-            <div className="skills-main-div">
+            <div className="skills-main-div" key={skill.title}>
               <Fade left duration={1000}>
                 <div className="skills-image-div" style={{ marginTop: 0 }}>
                   <GetSkillSvg fileName={skill.fileName} theme={LightTheme} />
@@ -53,6 +53,7 @@ function SkillSection(props) {
                         <p
                           className="subTitle skills-text"
                           style={{ color: LightTheme.secondaryText }}
+                          key={skillSentence.slice(0, 10)}
                         >
                           {skillSentence}
                         </p>
@@ -65,7 +66,7 @@ function SkillSection(props) {
           );
         } else {
           return (
-            <div className="skills-main-div">
+            <div className="skills-main-div" key={skill.title}>
               <div className="skills-text-div" style={{ marginTop: 0 }}>
                 <Fade left duration={1000}>
                   <h1
@@ -85,6 +86,7 @@ function SkillSection(props) {
                         <p
                           className="subTitle skills-text"
                           style={{ color: LightTheme.secondaryText }}
+                          key={skillSentence.slice(0, 10)}
                         >
                           {skillSentence}
                         </p>

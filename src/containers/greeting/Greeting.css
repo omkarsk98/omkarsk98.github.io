@@ -74,6 +74,31 @@
   cursor: pointer;
 }
 
+.social-media-links {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.site-tag {
+  font-family: "Google Sans Regular";
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.social-media-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkout-my-projects > .checkout-my {
+  font-size: 1em;
+}
+.checkout-my-projects > .checkout-my-projects-link {
+  font-size: 1.2em;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
@@ -102,7 +127,7 @@
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 16px;
+    /* font-size: 16px; */
     margin-right: 0px;
     line-height: normal;
     text-align: center;
@@ -116,5 +141,17 @@
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+
+  .checkout-my-projects > .checkout-my {
+    font-size: 1.2em;
+  }
+  .checkout-my-projects > .checkout-my-projects-link {
+    font-size: 1.4em;
+  }
+
+  .social-media-links {
+    width: 100%;
+    justify-content: space-around;
   }
 }
