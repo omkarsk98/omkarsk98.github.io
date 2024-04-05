@@ -10,7 +10,7 @@
 }
 
 .greet-main {
-  max-width: 1370px;
+  max-width: 95%;
   padding: 10px 10px;
   margin: 0px auto;
   margin-top: 2rem;
@@ -109,9 +109,9 @@
     font-size: 20px;
   }
 
-  .greet-main {
-    max-width: 900px;
-  }
+  /* .greet-main {
+    max-width: 90%;
+  } */
 }
 @media (max-width: 768px) {
   .button-greeting-div {
