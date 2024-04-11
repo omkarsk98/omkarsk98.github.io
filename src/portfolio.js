@@ -472,7 +472,7 @@ const projects = {
   sde: {
     data: [
       {
-        id: "-1",
+        id: "-2",
         name: "Fault-Tolerant Key-Value Store",
         description: [
           "Implemented the Raft consensus algorithm in C++ with timeout and heartbeat based leader election to ensure high availability.",
@@ -486,6 +486,40 @@ const projects = {
           },
         ],
         links: [],
+      },
+      {
+        id: "-3",
+        name: "Rock Paper Scissors Image Classifier",
+        description: [
+          "Developed a rock-paper-scissors image classifier using TensorFlow and Keras to classify images of rock, paper, and scissors.",
+          "Implement data augmentation to increase the size of the dataset and reduce overfitting by adding variety and noise to the data.",
+          "Architected multiple convolutional neural networks to classify the images and understand the effect of multiple strategies on the model's performance.",
+          "Achieved test accuracy on the best model of 78% and and F1 score of 0.78 by implementing custom callbacks and early stopping.",
+        ],
+        languages: [
+          {
+            name: "Python",
+            iconifyClass: "logos:python",
+          },
+          {
+            name: "Tensorflow",
+            iconifyClass: "logos:tensorflow",
+          },
+        ],
+        links: [
+          {
+            name: "Medium",
+            url:
+              "https://omkarsk98.medium.com/rock-paper-scissor-image-classification-3d21f36856ec",
+            iconifyClass: "bi:medium",
+          },
+          {
+            name: "Github",
+            url:
+              "https://github.com/omkarsk98/rock-paper-scissor-classification",
+            iconifyClass: "ri:github-fill",
+          },
+        ],
       },
       {
         id: "-1",
@@ -645,6 +679,40 @@ const projects = {
   ds: {
     data: [
       {
+        id: "-3",
+        name: "Rock Paper Scissors Image Classifier",
+        description: [
+          "Developed a rock-paper-scissors image classifier using TensorFlow and Keras to classify images of rock, paper, and scissors.",
+          "Implement data augmentation to increase the size of the dataset and reduce overfitting by adding variety and noise to the data.",
+          "Architected multiple convolutional neural networks to classify the images and understand the effect of multiple strategies on the model's performance.",
+          "Achieved test accuracy on the best model of 78% and and F1 score of 0.78 by implementing custom callbacks and early stopping.",
+        ],
+        languages: [
+          {
+            name: "Python",
+            iconifyClass: "logos:python",
+          },
+          {
+            name: "Tensorflow",
+            iconifyClass: "logos:tensorflow",
+          },
+        ],
+        links: [
+          {
+            name: "Medium",
+            url:
+              "https://omkarsk98.medium.com/rock-paper-scissor-image-classification-3d21f36856ec",
+            iconifyClass: "bi:medium",
+          },
+          {
+            name: "Github",
+            url:
+              "https://github.com/omkarsk98/rock-paper-scissor-classification",
+            iconifyClass: "ri:github-fill",
+          },
+        ],
+      },
+      {
         id: "0",
         name: "Restaurant Recommendation System",
         url: "",
@@ -661,27 +729,6 @@ const projects = {
           {
             name: "PySpark",
             iconifyClass: "devicon:apachespark-wordmark",
-          },
-          {
-            name: "Tensorflow",
-            iconifyClass: "logos:tensorflow",
-          },
-        ],
-        links: [],
-      },
-      {
-        id: "1",
-        name: "Similar Legal Documents Retrieval - NLP",
-        url: "",
-        description: [
-          "Lemmatized, annotated and summarized legal cases with transformer based architectures of distil-BART and Text-Rank based Summa while emphasising keywords and entities.",
-          "Vectorized and embedded text with TFIDF, Doc2Vec and BERT to retain semantics and commute averaged cosine similarity of multiple embeddings for each pair of cases.",
-          "Retrieved original and summarized cases for user required legal case with a Pearson Correlation score of 0.65.",
-        ],
-        languages: [
-          {
-            name: "Python",
-            iconifyClass: "logos:python",
           },
           {
             name: "Tensorflow",
@@ -773,6 +820,27 @@ const projects = {
             iconifyClass: "bi:medium",
           },
         ],
+      },
+      {
+        id: "1",
+        name: "Similar Legal Documents Retrieval - NLP",
+        url: "",
+        description: [
+          "Lemmatized, annotated and summarized legal cases with transformer based architectures of distil-BART and Text-Rank based Summa while emphasising keywords and entities.",
+          "Vectorized and embedded text with TFIDF, Doc2Vec and BERT to retain semantics and commute averaged cosine similarity of multiple embeddings for each pair of cases.",
+          "Retrieved original and summarized cases for user required legal case with a Pearson Correlation score of 0.65.",
+        ],
+        languages: [
+          {
+            name: "Python",
+            iconifyClass: "logos:python",
+          },
+          {
+            name: "Tensorflow",
+            iconifyClass: "logos:tensorflow",
+          },
+        ],
+        links: [],
       },
     ],
   },
