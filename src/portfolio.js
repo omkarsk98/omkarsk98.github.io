@@ -313,6 +313,19 @@ const experience = {
       title: "Work Experience",
       experiences: [
         {
+          title: "Research Assistant",
+          company: "USC Networked Systems Lab",
+          company_url: "https://nsl.usc.edu/",
+          logo_path: "usclogo.png",
+          duration: "January 2024 - Present",
+          location: "Los Angeles, California",
+          description: [
+            "Research systems like Nu and Service Weaver and build a Interactive Debugger for Distributed Systems (DDB).",
+            "Develop extension for Visual Studio Code in Typescript using Debugger Adapter Protocol to interact with GUI and distributed debugger over stdin-stdout.",
+          ],
+          color: "#0071C5",
+        },
+        {
           title: "Software and Data Science Intern",
           company: "Rockwell Automation",
           company_url: "https://www.rockwellautomation.com/en-us.html",
@@ -470,82 +483,8 @@ const contactPageData = {
 
 const projects = {
   sde: {
+    title: "Software Development Projects",
     data: [
-      {
-        id: "-2",
-        name: "Fault-Tolerant Key-Value Store",
-        description: [
-          "Implemented the Raft consensus algorithm in C++ with timeout and heartbeat based leader election to ensure high availability.",
-          "Maximized fault tolerance through optimized committed log replication, ensuring efficient recovery within Raft's protocol.",
-          "Built a key-value store with partitioning and sharing to efficiently utilise multiple nodes and ensure uninterrupted client request processing in the presence of failures or network partitions with failure identification and resharding.",
-        ],
-        languages: [
-          {
-            name: "C++",
-            iconifyClass: "skill-icons:cpp",
-          },
-        ],
-        links: [],
-      },
-      {
-        id: "-3",
-        name: "Rock Paper Scissors Image Classifier",
-        description: [
-          "Developed a rock-paper-scissors image classifier using TensorFlow and Keras to classify images of rock, paper, and scissors.",
-          "Implement data augmentation to increase the size of the dataset and reduce overfitting by adding variety and noise to the data.",
-          "Architected multiple convolutional neural networks to classify the images and understand the effect of multiple strategies on the model's performance.",
-          "Achieved test accuracy on the best model of 78% and and F1 score of 0.78 by implementing custom callbacks and early stopping.",
-        ],
-        languages: [
-          {
-            name: "Python",
-            iconifyClass: "logos:python",
-          },
-          {
-            name: "Tensorflow",
-            iconifyClass: "logos:tensorflow",
-          },
-        ],
-        links: [
-          {
-            name: "Medium",
-            url:
-              "https://omkarsk98.medium.com/rock-paper-scissor-image-classification-3d21f36856ec",
-            iconifyClass: "bi:medium",
-          },
-          {
-            name: "Github",
-            url:
-              "https://github.com/omkarsk98/rock-paper-scissor-classification",
-            iconifyClass: "ri:github-fill",
-          },
-        ],
-      },
-      {
-        id: "-1",
-        name: "Restaurant Recommendation System",
-        // url: "https://d2pq7x4bcjz9v2.cloudfront.net/",
-        description: [
-          "Performed Exploratory Data Analysis and Feature Engineering using pandas to scale data and eliminate outliers.",
-          "Implemented algorithms like item based collaborative filtering, xgboost and catboost regressor in pyspark using grid search for hyperparameter tuning to estimate the rating of a restaurant for a user.",
-          "Performed search and analytics using pyspark RDD over AWS  to study and exploit the efficiency boost of distributed computing.",
-        ],
-        languages: [
-          {
-            name: "Python",
-            iconifyClass: "logos:python",
-          },
-          {
-            name: "PySpark",
-            iconifyClass: "devicon:apachespark-wordmark",
-          },
-          {
-            name: "Tensorflow",
-            iconifyClass: "logos:tensorflow",
-          },
-        ],
-        links: [],
-      },
       {
         id: "0",
         name: "Distributed File System",
@@ -677,6 +616,7 @@ const projects = {
     ],
   },
   ds: {
+    title: "Data Science Projects",
     data: [
       {
         id: "-3",
@@ -738,55 +678,6 @@ const projects = {
         links: [],
       },
       {
-        id: "2",
-        name: "Distributed File System",
-        url: "https://emulated-distributed-file-system.netlify.app/",
-        description: [
-          "Developed a distributed file system to split files into chunks and simulate each chunk as a block of data stored separately.",
-          "Implemented UI based operations where user can create a directory, upload file, view contents, delete file, etc.",
-          "Searched and analysed data in ReactJS by applying filters to simulate searching in each block of data.",
-          "Stored these blocks of data in MySQL, Firebase and MongoDB meta data of the file like inode, parentInode and path.",
-          "Analysed data in pyspark to understand the power of distributed computing.",
-        ],
-        languages: [
-          {
-            name: "NodeJs",
-            iconifyClass: "logos-nodejs",
-          },
-          {
-            name: "ReactJS",
-            iconifyClass: "vscode-icons:file-type-reactjs",
-          },
-          {
-            name: "Spark",
-            iconifyClass: "devicon:apachespark-wordmark",
-          },
-          {
-            name: "MongoDB",
-            iconifyClass: "devicon:mongodb-wordmark",
-          },
-          {
-            name: "MySQL",
-            iconifyClass: "logos:mysql",
-          },
-          {
-            name: "Firebase",
-            iconifyClass: "logos:firebase",
-          },
-          {
-            name: "AWS",
-            iconifyClass: "logos:aws",
-          },
-        ],
-        links: [
-          {
-            name: "Live Demo",
-            url: "https://emulated-distributed-file-system.netlify.app",
-            iconifyClass: "mdi:web",
-          },
-        ],
-      },
-      {
         id: "3",
         name: "Time Series Analysis",
         url: "",
@@ -844,7 +735,29 @@ const projects = {
       },
     ],
   },
+  "dist-sys": {
+    title: "Distributed Systems Projects",
+    data: [
+      {
+        id: "1",
+        name: "Fault-Tolerant Key-Value Store",
+        description: [
+          "Implemented the Raft consensus algorithm in C++ with timeout and heartbeat based leader election to ensure high availability.",
+          "Maximized fault tolerance through optimized committed log replication, ensuring efficient recovery within Raft's protocol.",
+          "Built a key-value store with partitioning and sharing to efficiently utilise multiple nodes and ensure uninterrupted client request processing in the presence of failures or network partitions with failure identification and resharding.",
+        ],
+        languages: [
+          {
+            name: "C++",
+            iconifyClass: "skill-icons:cpp",
+          },
+        ],
+        links: [],
+      },
+    ],
+  },
   tableau: {
+    title: "Tableau Dashboards",
     data: [
       {
         id: "0",

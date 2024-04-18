@@ -1,10 +1,10 @@
 .experience-accord {
-  margin: 50px;
+  margin-inline: 3%;
   border-radius: 10px;
   /* background-color: #1d1d1d; */
   /* border: 0.1px solid rgba(211, 211, 211, 0.397); */
   transition: all 0.2s ease-in-out;
-  padding: 20px;
+  margin-block: 2%;
 }
 
 .experience-accord:hover {

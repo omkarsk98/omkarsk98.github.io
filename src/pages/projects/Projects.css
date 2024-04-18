@@ -5,11 +5,15 @@
 
 .other-projects {
   text-decoration: none;
-  width: 200px;
-  height: 50px;
   font-weight: bold;
   font-family: "Google Sans Regular";
   cursor: pointer;
+}
+
+.other-projects-list {
+  display: flex;
+  justify-content: space-around;
+  margin-inline: 10%;
 }
 
 .basic-projects {
@@ -68,9 +72,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem 1rem;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 60px;
+  margin-inline: 3%;
+  margin-block: 2%;
 }
 
 .two-col-grid {
@@ -83,9 +86,8 @@
   display: grid;
   grid-template-columns: repeat(1fr);
   gap: 1rem 1rem;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 60px;
+  margin-inline: 3%;
+  margin-block: 2%;
 }
 
 .watch-on-desktop {
@@ -104,6 +106,10 @@
 }
 
 @media (max-width: 768px) {
+  .other-projects-list {
+    font-size: 0.8em;
+    margin-inline: 3%;
+  }
   .projects-heading-text {
     font-size: 30px;
     margin-top: 20px;
