@@ -326,7 +326,7 @@ const experience = {
           color: "#0071C5",
         },
         {
-          title: "Software and Data Science Intern",
+          title: "Software Engineer Intern",
           company: "Rockwell Automation",
           company_url: "https://www.rockwellautomation.com/en-us.html",
           logo_path: "ra-logo.png",
@@ -336,6 +336,19 @@ const experience = {
             "Developed JSON-based ReSTful APIs with back-end in node.js to efficiently expose and plot batch-wise time-series data in visualization tools, reducing data cleaning effort by 30%.",
             "Built a batch analysis tool with front-end in React by integrating ReST API to compare and plot KPIs across batches, reducing quality assurance rejections by 20%.",
             "Achieved a 90% reduction in setup configuration time by automating data linking to integrate relational database storing KPI logs, resulting in a loosely coupled and highly interoperable system.",
+          ],
+          color: "#0071C5",
+        },
+        {
+          title: "Student Technical Assistant",
+          company: "Rockwell Automation",
+          company_url: "https://usc.edu",
+          logo_path: "usclogo.png",
+          duration: "June 2022 - December 2023",
+          location: "Los Angeles, United States",
+          description: [
+            "Streamlined processes for parking by leveraging pivot tables and python automation, reducing reporting latency by 85%.",
+            "Created data visualisations and maps in Tableau by scraping over 100 events per month to plan transportation operations and maintenance, resulting in informed decision making and a revenue increase of 10%.",
           ],
           color: "#0071C5",
         },
