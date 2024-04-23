@@ -6,7 +6,7 @@ export default function socialMedia(props) {
   const { theme } = props;
   return socialMediaLinks.map((site) => {
     return (
-      <div className="social-media-link">
+      <div className="social-media-link" key={site.tag}>
         <a href={site.url} target="_blank" style={{ color: "inherit" }}>
           <div
             key={site.name}

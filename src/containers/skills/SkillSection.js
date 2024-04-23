@@ -6,7 +6,7 @@ import { Fade } from "react-reveal";
 import FullStackImg from "./FullStackImg";
 import DataScienceImg from "./DataScienceImg";
 import LightTheme from "../../theme";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 function GetSkillSvg(props) {
   if (props.fileName === "FullStackImg")
@@ -60,6 +60,21 @@ function SkillSection(props) {
                       );
                     })}
                   </div>
+                  <div className="skills-section-projects">
+                    {skill.projectLinks.map((project) => {
+                      return (
+                        <Link
+                          to={project.link}
+                          style={{ textDecoration: "none" }}
+                          key={project.title}
+                        >
+                          <span style={{ color: LightTheme.accentColor }}>
+                            {project.title}
+                          </span>
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </Fade>
               </div>
             </div>
@@ -90,6 +105,21 @@ function SkillSection(props) {
                         >
                           {skillSentence}
                         </p>
+                      );
+                    })}
+                  </div>
+                  <div className="skills-section-projects">
+                    {skill.projectLinks.map((project) => {
+                      return (
+                        <Link
+                          to={project.link}
+                          style={{ textDecoration: "none" }}
+                          key={project.title}
+                        >
+                          <span style={{ color: LightTheme.accentColor }}>
+                            {project.title}
+                          </span>
+                        </Link>
                       );
                     })}
                   </div>

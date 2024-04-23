@@ -108,9 +108,9 @@
   flex-direction: column;
 }
 
-.tableau-project-card-div {
+/* .tableau-project-card-div {
   height: 1000px;
-}
+} */
 
 @media (max-width: 768px) {
   .repo-name {

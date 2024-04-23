@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import Educations from "../../containers/education/Educations";
 import EducationImg from "./EducationImg";
 import "./EducationComponent.css";
@@ -39,7 +38,6 @@ function Education(props) {
         {/* </Fade> */}
         <Educations theme={LightTheme} />
       </div>
-      <Footer theme={LightTheme} />
     </div>
   );
 }

@@ -1,29 +1,27 @@
 import React from "react";
-import {
-  BrowserRouter,
-  HashRouter,
-  Navigate,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { HashRouter, Navigate, Routes, Route } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/experience/Experience";
 import Projects from "../pages/projects/Projects";
+import Footer from "../components/footer/Footer";
 
 export default (props) => {
   return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<Navigate to="/sde" />} />
-        {/* <Route path="/#/sde" element={<Navigate to="/sde" />} />
+    <>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Navigate to="/sde" />} />
+          {/* <Route path="/#/sde" element={<Navigate to="/sde" />} />
         <Route path="/#/ds" element={<Navigate to="/ds" />} /> */}
-        <Route path="/:role" element={<Home />} />
-        <Route path="/:role/experience" element={<Experience {...props} />} />
-        <Route path="/:role/education" element={<Education {...props} />} />
-        <Route path="/:role/projects" element={<Projects {...props} />} />
-      </Routes>
-    </HashRouter>
+          <Route path="/:role" element={<Home />} />
+          <Route path="/:role/experience" element={<Experience {...props} />} />
+          <Route path="/:role/education" element={<Education {...props} />} />
+          <Route path="/:role/projects" element={<Projects {...props} />} />
+        </Routes>
+      </HashRouter>
+      <Footer />
+    </>
   );
 };
 

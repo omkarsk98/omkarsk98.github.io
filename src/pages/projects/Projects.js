@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Helmet } from "react-helmet";
 import { projectsHeader, projects } from "../../portfolio.js";
@@ -38,7 +37,22 @@ function Projects(props) {
           </div>
         </div>
       </div>
-
+      <div className="other-projects-list">
+        {Object.entries(projects)
+          .filter(([key, _]) => key !== role)
+          .map(([key, value]) => {
+            return (
+              <Link
+                to={`/${key}/projects`}
+                className="other-projects"
+                style={{ color: LightTheme.accentColor }}
+                key={key}
+              >
+                {value.title}
+              </Link>
+            );
+          })}
+      </div>
       <div
         className={
           role === `tableau`
@@ -57,22 +71,6 @@ function Projects(props) {
           );
         })}
       </div>
-      <div className="other-projects-list">
-        {Object.entries(projects)
-          .filter(([key, _]) => key !== role)
-          .map(([key, value]) => {
-            return (
-              <Link
-                to={`/${key}/projects`}
-                className="other-projects"
-                style={{ color: LightTheme.accentColor }}
-              >
-                {value.title}
-              </Link>
-            );
-          })}
-      </div>
-      <Footer theme={LightTheme} />
     </div>
   );
 }

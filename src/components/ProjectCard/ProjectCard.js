@@ -40,7 +40,7 @@ export default function ProjectCard({ repo, theme, isDashboard }) {
     const vizElement = divElement.getElementsByTagName("object")[0];
     if (!vizElement) return;
     vizElement.style.width = "100%";
-    vizElement.style.height = "100%";
+    vizElement.style.height = "95vh";
     const scriptElement = document.createElement("script");
     scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -48,7 +48,7 @@ export default function ProjectCard({ repo, theme, isDashboard }) {
   const getDashboard = () => (
     <div
       dangerouslySetInnerHTML={{ __html: repo.content }}
-      style={{ height: "100%" }}
+      // style={{ height: "100%" }}
     />
   );
 
