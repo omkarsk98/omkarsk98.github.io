@@ -25,6 +25,7 @@ export default function Greeting(props) {
                 {greeting.full_name}.{" "}
               </span>
               {greeting.subTitle}
+              <div style={{ fontSize: "0.8em" }}>{greeting.locationTitle}</div>
             </p>
             <div className="social-media-links">
               <SocialMedia theme={LightTheme} />

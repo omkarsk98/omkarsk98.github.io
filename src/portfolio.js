@@ -17,6 +17,7 @@ const greeting = {
   subTitle:
     "MERN Stack Developer and a Data Scientist. I am currently on my F1-OPT visa (OPT period until February 2025) and open to Software Engineer roles.!",
   resumeLink: "",
+  locationTitle: "Based in Los Angeles, California (and open to relocation)",
   mail: "mailto:omkarsk98@gmail.com",
 };
 
