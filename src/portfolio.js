@@ -15,9 +15,9 @@ const greeting = {
   nickname: "Kullya",
   full_name: "Omkar Kulkarni",
   subTitle:
-    "MERN Stack Developer and a Data Scientist. I am currently on my F1-OPT visa (OPT period until February 2025) and open to Software Engineer roles.!",
+    "MERN Stack Developer and a Data Scientist and I work at ByteDance!",
   resumeLink: "",
-  locationTitle: "Based in Los Angeles, California (and open to relocation)",
+  locationTitle: "Based in Seattle, Washington",
   mail: "mailto:omkarsk98@gmail.com",
 };
 
@@ -327,18 +327,32 @@ const experience = {
   title: "Experience",
   subtitle: "Work Experience and Internships",
   description:
-    "Currently, as of January 2024, I have graduated from USC and looking for a full time role as a Software Engineer. I am open to Full Stack, Frontend, Backend Software Engineer roles. I interned in Rockwell Automation during the summer to develop a batchwise time-series analysis tool. I take great pride to mention that I have worked with Asort E-Commerce as a Software Developer in the past. I had interned in the same company and thats how they offered me a full time job.",
+    "Currently, as of April 2025, I am actively developing a strong business-oriented approach to software engineering, focusing on improving technical performance, analyzing key metrics, and driving measurable impact at Bytedance as a Frontend Engineer. I take great pride to mention that I have worked with Asort E-Commerce as a Software Developer in the past.",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work Experience",
       experiences: [
         {
+          title: "Frontend Engineer",
+          company: "Bytedance",
+          company_url: "",
+          logo_path: "bytedancelogo.png",
+          duration: "July 2024 - Present",
+          location: "Seattle, Washington",
+          description: [
+            "Developed intuitive vendor onboarding platform for Tiktok Shop in React.js with real-time Identity and KYB/KYC verification and seller assistant to consistently improve successful vendor-onboarding-rate by 4% quarter-on-quarter.",
+            "Implemented streamlined user flows for warehouse address setup, product listing, shopify store linking in React.js and Typescript, increasing sellable vendors in Tiktok Shop by 7%.",
+            "Designed highly dynamic content configuration for seller registration based on traffic origin for personalised experience.",
+          ],
+          color: "#0071C5",
+        },
+        {
           title: "Research Assistant",
           company: "USC Networked Systems Lab",
           company_url: "https://nsl.usc.edu/",
           logo_path: "usclogo.png",
-          duration: "January 2024 - Present",
+          duration: "January 2024 - July 2024",
           location: "Los Angeles, California",
           description: [
             "Research systems like Nu and Service Weaver and build a Interactive Debugger for Distributed Systems (DDB).",
