@@ -634,7 +634,7 @@ const projects = {
         links: [
           {
             name: "Live Demo",
-            url: "https://shershah-expenses.netlify.app/",
+            url: "https://expenses.omkarsk98.com/",
             iconifyClass: "mdi:web",
           },
         ],
