@@ -67,5 +67,24 @@
   "lint-staged": {
     "*.json": "prettier-package-json --write",
     "*.{js,css,md}": "prettier --write"
+  },
+  "overrides": {
+    "baseui": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "react-cursor-custom": {
+      "react": "$react"
+    },
+    "react-reveal": {
+      "react": "$react"
+    },
+    "react-rounded-image": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "styletron-react": {
+      "react": "$react"
+    }
   }
 }
