@@ -6,7 +6,7 @@ import Experience from "../pages/experience/Experience";
 import Projects from "../pages/projects/Projects";
 import Footer from "../components/footer/Footer";
 
-export default (props) => {
+const Main = (props) => {
   return (
     <>
       <BrowserRouter>
@@ -22,3 +22,5 @@ export default (props) => {
     </>
   );
 };
+
+export default Main;

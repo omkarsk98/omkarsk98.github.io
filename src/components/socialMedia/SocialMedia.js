@@ -7,7 +7,12 @@ export default function socialMedia(props) {
   return socialMediaLinks.map((site) => {
     return (
       <div className="social-media-link" key={site.tag}>
-        <a href={site.url} target="_blank" style={{ color: "inherit" }}>
+        <a
+          href={site.url}
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "inherit" }}
+        >
           <div
             key={site.name}
             className={`iconify icon-button`}
