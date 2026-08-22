@@ -12,10 +12,9 @@ const greeting = {
   title: "Hello 🙏!!",
   title2: "Omkar",
   logo_name: "omkarsk98()",
-  nickname: "Kullya",
+  // nickname: "Kullya",
   full_name: "Omkar Kulkarni",
-  subTitle:
-    "MERN Stack Developer and a Data Scientist and I work at ByteDance!",
+  subTitle: "Full Stack Developer, a Data Scientist and I work at Flexport!",
   resumeLink: "",
   locationTitle: "Based in Seattle, Washington",
   mail: "mailto:omkarsk98@gmail.com",
@@ -327,18 +326,32 @@ const experience = {
   title: "Experience",
   subtitle: "Work Experience and Internships",
   description:
-    "Currently, as of April 2025, I am actively developing a strong business-oriented approach to software engineering, focusing on improving technical performance, analyzing key metrics, and driving measurable impact at Bytedance as a Frontend Engineer. I take great pride to mention that I have worked with Asort E-Commerce as a Software Developer in the past.",
+    "Currently, as of August 2026, I am actively developing a strong business-oriented approach to software engineering, focusing on improving technical performance, analyzing key metrics, and driving measurable impact at Flexport as SDE 2. I take great pride to mention that I have worked with Asort E-Commerce as a Software Developer and Bytedance as a Frontend Engineer in the past.",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work Experience",
       experiences: [
         {
+          title: "SDE 2",
+          company: "Flexport",
+          company_url: "",
+          logo_path: "flexport_logo.jpeg",
+          duration: "December 2025 - Present",
+          location: "Seattle, Washington",
+          description: [
+            "Implement data retention policy for Inventory in MySQL to efficiently manage storage on AWS RDS leveraging gh-ost.",
+            "Investigate and refine inventory reservations in MySQL and JavaScript to reduce order stockouts by 30%.",
+            "Integrated redis caching for product lookup in node.js to reduce available-to-purchase latency by 35% and offload traffic on product-service with a cache hit-rate of 80+%.",
+          ],
+          color: "#0071C5",
+        },
+        {
           title: "Frontend Engineer",
           company: "Bytedance",
           company_url: "",
           logo_path: "bytedancelogo.png",
-          duration: "July 2024 - Present",
+          duration: "July 2024 - Nov 2025",
           location: "Seattle, Washington",
           description: [
             "Developed intuitive vendor onboarding platform for Tiktok Shop in React.js with real-time Identity and KYB/KYC verification and seller assistant to consistently improve successful vendor-onboarding-rate by 4% quarter-on-quarter.",
@@ -360,33 +373,33 @@ const experience = {
           ],
           color: "#0071C5",
         },
-        {
-          title: "Software Engineer Intern",
-          company: "Rockwell Automation",
-          company_url: "https://www.rockwellautomation.com/en-us.html",
-          logo_path: "ra-logo.png",
-          duration: "June 2023 - August 2023",
-          location: "Gurugram, India",
-          description: [
-            "Developed JSON-based ReSTful APIs with back-end in node.js to efficiently expose and plot batch-wise time-series data in visualization tools, reducing data cleaning effort by 30%.",
-            "Built a batch analysis tool with front-end in React by integrating ReST API to compare and plot KPIs across batches, reducing quality assurance rejections by 20%.",
-            "Achieved a 90% reduction in setup configuration time by automating data linking to integrate relational database storing KPI logs, resulting in a loosely coupled and highly interoperable system.",
-          ],
-          color: "#0071C5",
-        },
-        {
-          title: "Student Technical Assistant",
-          company: "Rockwell Automation",
-          company_url: "https://usc.edu",
-          logo_path: "usclogo.png",
-          duration: "June 2022 - December 2023",
-          location: "Los Angeles, United States",
-          description: [
-            "Streamlined processes for parking by leveraging pivot tables and python automation, reducing reporting latency by 85%.",
-            "Created data visualisations and maps in Tableau by scraping over 100 events per month to plan transportation operations and maintenance, resulting in informed decision making and a revenue increase of 10%.",
-          ],
-          color: "#0071C5",
-        },
+        // {
+        //   title: "Software Engineer Intern",
+        //   company: "Rockwell Automation",
+        //   company_url: "https://www.rockwellautomation.com/en-us.html",
+        //   logo_path: "ra-logo.png",
+        //   duration: "June 2023 - August 2023",
+        //   location: "Gurugram, India",
+        //   description: [
+        //     "Developed JSON-based ReSTful APIs with back-end in node.js to efficiently expose and plot batch-wise time-series data in visualization tools, reducing data cleaning effort by 30%.",
+        //     "Built a batch analysis tool with front-end in React by integrating ReST API to compare and plot KPIs across batches, reducing quality assurance rejections by 20%.",
+        //     "Achieved a 90% reduction in setup configuration time by automating data linking to integrate relational database storing KPI logs, resulting in a loosely coupled and highly interoperable system.",
+        //   ],
+        //   color: "#0071C5",
+        // },
+        // {
+        //   title: "Student Technical Assistant",
+        //   company: "Rockwell Automation",
+        //   company_url: "https://usc.edu",
+        //   logo_path: "usclogo.png",
+        //   duration: "June 2022 - December 2023",
+        //   location: "Los Angeles, United States",
+        //   description: [
+        //     "Streamlined processes for parking by leveraging pivot tables and python automation, reducing reporting latency by 85%.",
+        //     "Created data visualisations and maps in Tableau by scraping over 100 events per month to plan transportation operations and maintenance, resulting in informed decision making and a revenue increase of 10%.",
+        //   ],
+        //   color: "#0071C5",
+        // },
         {
           title: "Software Developer",
           company: "Asort E-Commerce",
@@ -634,7 +647,7 @@ const projects = {
         links: [
           {
             name: "Live Demo",
-            url: "https://expenses.omkarsk98.com/",
+            url: "https://expenses.omkarsk98.com/expenses",
             iconifyClass: "mdi:web",
           },
         ],
